@@ -1,5 +1,13 @@
 import Image from 'next/image'
-import { Button, MasterCard, Android, Apple, Partners, Card } from '/components'
+import {
+  Button,
+  MasterCard,
+  Android,
+  Apple,
+  Partners,
+  Card,
+  Products,
+} from '/components'
 import { banner } from '/public'
 import { cards } from '/config'
 
@@ -44,6 +52,9 @@ export default function Admin() {
             image={image}
           />
         ))}
+      </section>
+      <section className='px-16'>
+        <Products />
       </section>
       <br />
       <Button>Learn More</Button>
