@@ -1,3 +1,5 @@
 export * from './Partners'
 export * from './Card'
 export * from './Products'
+export * from './Security'
+export * from './Highlights'

@@ -1,4 +1,5 @@
-export * from './icons'
 export * from './Navbar'
 export * from './shared'
+export * from './Footer'
+export * from './icons'
 export * from './home'

@@ -1,5 +1,5 @@
 import { Button, MasterCard } from '/components'
-import { card, wallet } from '/public'
+import { card } from '/public'
 
 export const cards = [
   {

@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Navbar } from '/components'
+import { Footer, Navbar } from '/components'
 
 export const metadata: Metadata = {
   title: 'WallyPay',
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body style={font.style} className='text-app-black'>
         <Navbar />
         <main className='mx-auto max-w-[100rem]'>{children}</main>
+        <Footer />
       </body>
     </html>
   )

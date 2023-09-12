@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import {
-  Button,
-  MasterCard,
   Android,
   Apple,
   Partners,
   Card,
   Products,
+  Security,
+  Highlights,
 } from '/components'
-import { banner, lock } from '/public'
+import { banner } from '/public'
 import { cards } from '/config'
 
 export default function Admin() {
@@ -54,42 +54,12 @@ export default function Admin() {
         ))}
         <Products />
       </section>
-      <section className='mt-20 flex gap-32 px-16'>
-        <div className='flex flex-col gap-12 basis-1/2 py-20'>
-          <h2 className='text-5xl font-bold'>Confidentiality & Security</h2>
-          <p className='balanced pr-5 font-normal text-lg text-[#484848] leading-8 max-w-2xl tracking-wider'>
-            Experience worry-free, confidential payments with our e-wallet app.
-            Your security is our top priority, with robust encryption and
-            cutting-edge safeguards in place to protect your personal and
-            financial information. Trust us for a secure payment experience.
-          </p>
-          <div className='flex gap-8'>
-            <Button className='bg-[#484848] text-white hover:bg-black'>
-              Learn More
-            </Button>
-          </div>
-        </div>
-        <div className='ml-auto basis-1/2'>
-          <figure className='flex p-5 pt-0'>
-            <Image
-              src={lock}
-              alt='banner'
-              className='max-w-md object-contain ml-auto'
-              priority
-            />
-          </figure>
-        </div>
+      <section className='flex flex-col gap-20 px-16 py-16'>
+        <Security />
       </section>
-      <br />
-      <Button>Learn More</Button>
-      <br></br>
-
-      <br />
-      <Button variant='primary' className='bg-app-blue border-app-blue'>
-        <MasterCard />
-        Order Debit Card
-      </Button>
-      <br />
+      <section className='pt-20'>
+        <Highlights />
+      </section>
     </div>
   )
 }

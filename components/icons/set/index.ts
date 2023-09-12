@@ -1,0 +1,8 @@
+export { default as CardIcon } from './Card'
+export { default as DownloadIcon } from './Download'
+export { default as LoanIcon } from './Loan'
+export { default as RegisterIcon } from './Register'
+export { default as TopUpIcon } from './TopUp'
+export { default as TransferIcon } from './Transfer'
+export { default as UtilitiesIcon } from './Utilities'
+export { default as WalletIcon } from './Wallet'

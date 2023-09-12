@@ -1,5 +1,9 @@
-export * from "./Logo";
-export * from "./Arrow";
-export * from "./MasterCard";
-export * from "./Android";
-export * from "./Apple";
+export * from './Logo'
+export * from './Arrow'
+export * from './MasterCard'
+export * from './Android'
+export * from './Apple'
+export * from './set'
+export { default as InsuranceIcon } from './Insurance'
+export { default as SecurityIcon } from './Security'
+export { default as PrivacyIcon } from './Privacy'

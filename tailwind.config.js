@@ -18,6 +18,7 @@ module.exports = {
         'app-blue': '#1CC5FF',
         'app-blue-dark': '#21242E',
         'app-blue-light': '#EAFAFF',
+        'app-gray-txt': '#484848',
       },
     },
   },
