@@ -8,7 +8,7 @@ import {
   Card,
   Products,
 } from '/components'
-import { banner } from '/public'
+import { banner, lock } from '/public'
 import { cards } from '/config'
 
 export default function Admin() {
@@ -52,9 +52,33 @@ export default function Admin() {
             image={image}
           />
         ))}
-      </section>
-      <section className='px-16'>
         <Products />
+      </section>
+      <section className='mt-20 flex gap-32 px-16'>
+        <div className='flex flex-col gap-12 basis-1/2 py-20'>
+          <h2 className='text-5xl font-bold'>Confidentiality & Security</h2>
+          <p className='balanced pr-5 font-normal text-lg text-[#484848] leading-8 max-w-2xl tracking-wider'>
+            Experience worry-free, confidential payments with our e-wallet app.
+            Your security is our top priority, with robust encryption and
+            cutting-edge safeguards in place to protect your personal and
+            financial information. Trust us for a secure payment experience.
+          </p>
+          <div className='flex gap-8'>
+            <Button className='bg-[#484848] text-white hover:bg-black'>
+              Learn More
+            </Button>
+          </div>
+        </div>
+        <div className='ml-auto basis-1/2'>
+          <figure className='flex p-5 pt-0'>
+            <Image
+              src={lock}
+              alt='banner'
+              className='max-w-md object-contain ml-auto'
+              priority
+            />
+          </figure>
+        </div>
       </section>
       <br />
       <Button>Learn More</Button>
