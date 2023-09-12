@@ -7,13 +7,14 @@ import {
   Products,
   Security,
   Highlights,
+  Anima,
 } from '/components'
 import { banner } from '/public'
 import { cards } from '/config'
 
 export default function Admin() {
   return (
-    <div className='text-black font-bold text-lg'>
+    <div className='text-black font-bold text-lg fade-in'>
       <section className='mt-20 flex gap-32 px-16'>
         <div className='flex flex-col gap-12 basis-1/2 py-20'>
           <h2 className='text-6xl font-bold'>Join The Future!</h2>
@@ -43,14 +44,15 @@ export default function Admin() {
       </section>
       <section className='bg-app-blue-light px-16 flex flex-col gap-28 py-32'>
         {cards.map(({ button, description, heading, image, sub }) => (
-          <Card
-            key={heading}
-            button={button}
-            heading={heading}
-            sub={sub}
-            description={description}
-            image={image}
-          />
+          <Anima key={heading}>
+            <Card
+              button={button}
+              heading={heading}
+              sub={sub}
+              description={description}
+              image={image}
+            />
+          </Anima>
         ))}
         <Products />
       </section>
