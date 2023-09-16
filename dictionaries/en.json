@@ -26,7 +26,8 @@
         "Easy, fast, convenient, safe and secure",
         "Provides access to various cards",
         "Helps to manage daily finances"
-      ]
+      ],
+      "action": "Learn More"
     },
     "loan": {
       "heading": "We offer loans",
@@ -36,7 +37,8 @@
         "Unlock substantial borrowing potential through partners with raised loan ceilings",
         "Easily secure additional loans online, no complex steps",
         "Easily manage multiple loans with one mobile app"
-      ]
+      ],
+      "action": "Learn More"
     },
     "crypto": {
       "heading": "We’re crypto-friendly",
@@ -46,7 +48,8 @@
         "Your funds reach reputable crypto platforms securely",
         "Move funds seamlessly for diversified investments",
         "Monitor transfer history, maintaining transparent records"
-      ]
+      ],
+      "action": "Learn More"
     },
     "products": {
       "heading": "Join The Future!",
@@ -61,6 +64,8 @@
     },
     "security": {
       "heading": "Confidentiality & Security",
+      "description": "Experience worry-free, confidential payments with our e-wallet app. Your security is our top priority, with robust encryption and cutting-edge safeguards in place to protect your personal and financial information. Trust us for a secure payment experience.",
+      "action": "Learn More",
       "insurance": "Our constant priority is to ensure the security of your confidentiality.",
       "privacy": "Your security matters, and so do your payments and transactions with us.",
       "security": "We`re dedicated to keeping your data safe and secure."
@@ -79,11 +84,34 @@
     }
   },
   "shared": {
-    "products": "Products",
-    "partnership": "Partnership",
-    "about": "About",
-    "contact": "Contact",
-    "becomeAPartner": "Become a Partner",
-    "orderDebitCard": "Order Debit Card"
+    "header": {
+      "products": "Products",
+      "partnership": "Partnership",
+      "about": "About",
+      "contact": "Contact",
+      "becomeAPartner": "Become a Partner",
+      "orderDebitCard": "Order Debit Card"
+    },
+    "footer": {
+      "heading": {
+        "products": "Products",
+        "wallypay": "About Us",
+        "contact": "Contact"
+      },
+      "list": {
+        "phone": "+995 032 256 05 55",
+        "email": "support@wallypay.eu",
+        "address": "42 Alexander Kazbegi Ave. | 0171 | Tbilisi",
+        "about": "About Us",
+        "partnership": "Become a Partner",
+        "terms": "Terms and Conditions",
+        "blog": "Blog",
+        "card": "WallyPay Debit Card",
+        "wallet": "E-Wallet",
+        "crypto": "Crypto-Friendly Wallet",
+        "loan": "Online Loan"
+      },
+      "copy": "Copyright © 2023 all rights reserved"
+    }
   }
 }

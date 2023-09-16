@@ -1,17 +1,16 @@
-import { InsuranceIcon, PrivacyIcon, SecurityIcon } from '/components'
+import { InsuranceIcon, PrivacyIcon, SecurityIcon } from '/components/icons'
 
 export const security = [
   {
-    desc: 'Our constant priority is to ensure the security of your confidentiality.',
+    desc: 'insurance',
     Icon: InsuranceIcon,
   },
-
   {
-    desc: 'Your security matters, and so do your payments and transactions with us.',
+    desc: 'privacy',
     Icon: PrivacyIcon,
   },
   {
-    desc: 'We`re dedicated to keeping your data safe and secure.',
+    desc: 'security',
     Icon: SecurityIcon,
   },
-]
+] as const

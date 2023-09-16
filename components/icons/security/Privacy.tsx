@@ -1,4 +1,4 @@
-export const Privacy = () => (
+export const PrivacyIcon = () => (
   <svg
     width='52'
     height='52'
@@ -27,5 +27,3 @@ export const Privacy = () => (
     </defs>
   </svg>
 )
-
-export default Privacy

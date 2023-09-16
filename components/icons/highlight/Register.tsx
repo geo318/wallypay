@@ -1,10 +1,11 @@
-const Register = () => (
+const Register: React.FC<JSX.IntrinsicElements['svg']> = (props) => (
   <svg
     width='53'
     height='52'
     viewBox='0 0 53 52'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    {...props}
   >
     <rect x='0.5' width='52' height='52' rx='26' fill='#1CC5FF' />
     <path

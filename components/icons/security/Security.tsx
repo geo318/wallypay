@@ -1,4 +1,4 @@
-export const Security = () => (
+export const SecurityIcon = () => (
   <svg
     width='52'
     height='52'
@@ -12,5 +12,3 @@ export const Security = () => (
     />
   </svg>
 )
-
-export default Security

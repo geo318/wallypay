@@ -2,6 +2,8 @@ import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Footer, Navbar } from '/components'
+import { Locale } from '/types'
+import { getDictionary } from '/lib'
 
 export const metadata: Metadata = {
   title: 'WallyPay',
@@ -13,17 +15,20 @@ const font = Inter({
   subsets: ['latin'],
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: { lang },
 }: {
   children: React.ReactNode
+  params: { lang: Locale }
 }) {
+  const { shared } = await getDictionary(lang)
   return (
     <html lang='en'>
       <body style={font.style} className='text-app-black'>
-        <Navbar />
+        <Navbar text={shared.header}/>
         <main className='mx-auto max-w-[100rem]'>{children}</main>
-        <Footer />
+        <Footer text={shared.footer}/>
       </body>
     </html>
   )

@@ -4,7 +4,7 @@ import { NavbarProps } from './types'
 import { useNavbar } from './useNavbar'
 import { Button, Logo, MasterCard, Switcher } from '/components'
 
-export const Navbar: React.FC<NavbarProps> = () => {
+export const Navbar: React.FC<NavbarProps> = ({ text }) => {
   const { navList } = useNavbar()
   return (
     <header className='text-white font-bold text-lg py-7 bg-app-blue-dark px-16'>

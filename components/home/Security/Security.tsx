@@ -2,26 +2,24 @@ import Image from 'next/image'
 import { Anima, Button } from '/components'
 import { lock } from '/public'
 import { security } from '/config'
+import { HomeText } from '/types'
 
-export const Security = () => {
+export const Security = ({ text }: { text: HomeText['security'] }) => {
   return (
     <>
       <div className='flex gap-20'>
         <div className='flex flex-col gap-12 basis-1/2 py-20'>
           <Anima>
-            <h2 className='text-5xl font-bold'>Confidentiality & Security</h2>
+            <h2 className='text-5xl font-bold'>{text.heading}</h2>
           </Anima>
           <Anima>
             <p className='balanced pr-5 font-normal text-lg text-[#484848] leading-8 max-w-2xl tracking-wider'>
-              Experience worry-free, confidential payments with our e-wallet
-              app. Your security is our top priority, with robust encryption and
-              cutting-edge safeguards in place to protect your personal and
-              financial information. Trust us for a secure payment experience.
+              {text.description}
             </p>
           </Anima>
           <div className='flex gap-8'>
             <Button className='bg-app-gray-txt text-white hover:bg-black'>
-              Learn More
+              {text.action}
             </Button>
           </div>
         </div>
@@ -40,11 +38,11 @@ export const Security = () => {
       </div>
       <div className='flex justify-between'>
         {security.map(({ desc, Icon }) => (
-          <Anima key={desc}>
+          <Anima key={text[desc]}>
             <div className='max-w-xs flex flex-col gap-6'>
               <Icon />
               <p className='balanced text-sm font-medium text-app-gray-txt'>
-                {desc}
+                {text[desc]}
               </p>
             </div>
           </Anima>

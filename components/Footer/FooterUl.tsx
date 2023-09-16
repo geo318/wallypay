@@ -1,17 +1,20 @@
 import Link from 'next/link'
+import { footer } from '/config'
+import { SharedText } from '/types'
 
 export const FooterUl: React.FC<{
+  items: (typeof footer)[number]['list']
+  text: SharedText['footer']
   heading: string
-  items: { name: string; link: string }[]
-}> = ({ heading, items }) => {
+}> = ({ items, text, heading }) => {
   return (
     <div>
       <h5 className='font-bold mb-5'>{heading}</h5>
       <ul className='flex flex-col gap-3'>
         {items.map(({ name, link }) => (
-          <li key={name} className='text-sm'>
+          <li key={link} className='text-sm'>
             <Link href={link} className='balanced'>
-              {name}
+              {text.list[name]}
             </Link>
           </li>
         ))}

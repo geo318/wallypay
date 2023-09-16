@@ -1,10 +1,11 @@
-export const Card = () => (
+export const Card: React.FC<JSX.IntrinsicElements['svg']> = (props) => (
   <svg
     width='52'
     height='52'
     viewBox='0 0 52 52'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    {...props}
   >
     <rect width='52' height='52' rx='26' fill='#1CC5FF' />
     <path

@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import { Navbar, Button, MasterCard, Android, Apple } from '/components'
+import { Button, MasterCard, Android, Apple } from '/components'
 import { banner } from '/public'
 
 export default function Admin() {
   return (
     <div className='text-black font-bold text-lg'>
-      <Navbar />
       <section className='mt-20 flex gap-32'>
         <div className='flex flex-col gap-12 max-w-xl justify-center'>
           <h1 className='text-6xl font-bold'>Join The Future!</h1>

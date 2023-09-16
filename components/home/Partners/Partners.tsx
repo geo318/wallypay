@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { usePartners } from './usePartners'
+import { HomeText } from '/types'
 
-export const Partners = () => {
+export const Partners = ({ text }: { text: HomeText['partners'] }) => {
   const { partners } = usePartners()
   return (
     <>
-      <h3 className='text-3xl font-bold'>Our partners</h3>
+      <h3 className='text-3xl font-bold'>{text.heading}</h3>
       <div className='flex flex-col gap-10 mt-24'>
         {partners.map((section, i) => (
           <div className='flex justify-around items-center' key={i}>
