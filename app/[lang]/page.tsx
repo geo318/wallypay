@@ -11,13 +11,20 @@ import {
 } from '/components'
 import { banner } from '/public'
 import { cards } from '/config'
+import { Locale } from '/types'
+import { getDictionary } from '/lib/dictionary'
 
-export default function Admin() {
+export default async function Admin({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}) {
+  const { home } = await getDictionary(lang)
   return (
     <div className='text-black font-bold text-lg fade-in'>
       <section className='mt-20 flex gap-32 px-16'>
         <div className='flex flex-col gap-12 basis-1/2 py-20'>
-          <h2 className='text-6xl font-bold'>Join The Future!</h2>
+          <h2 className='text-6xl font-bold'>{home.main.heading}</h2>
           <p className='pr-5 font-normal text-xl leading-8 max-w-2xl tracking-wider'>
             Download <span className='text-app-blue font-bold'>WallyPay</span> -
             unleash the power of convenience with our E-Wallet app and claim

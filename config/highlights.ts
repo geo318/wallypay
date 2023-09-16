@@ -10,12 +10,12 @@ import {
 } from '/components/icons'
 
 export const highlights = [
-  { desc: 'Download WallyPay', Icon: CardIcon },
-  { desc: 'Register easily', Icon: DownloadIcon },
-  { desc: 'Top-up balance', Icon: LoanIcon },
-  { desc: 'Start using e-wallet', Icon: RegisterIcon },
-  { desc: 'Pay the utilities', Icon: TopUpIcon },
-  { desc: 'Add a loan online', Icon: TransferIcon },
-  { desc: 'Get your debit card', Icon: UtilitiesIcon },
-  { desc: 'Transfer to exchange', Icon: WalletIcon },
+  { desc: 'Download WallyPay', Icon: DownloadIcon },
+  { desc: 'Register easily', Icon: RegisterIcon },
+  { desc: 'Top-up balance', Icon: TopUpIcon },
+  { desc: 'Start using e-wallet', Icon: WalletIcon },
+  { desc: 'Pay the utilities', Icon: UtilitiesIcon },
+  { desc: 'Add a loan online', Icon: LoanIcon },
+  { desc: 'Get your debit card', Icon: CardIcon },
+  { desc: 'Transfer to exchange', Icon: TransferIcon },
 ]

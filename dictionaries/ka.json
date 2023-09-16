@@ -1,0 +1,89 @@
+{
+  "home": {
+    "main": {
+      "heading": "Join The Future!",
+      "Download": "Download",
+      "wallypay": "WallyPay",
+      "description": "unleash the power of convenience with our E-Wallet app and claim your very own exclusive Mastercard Debit Card!"
+    },
+    "partners": { "heading": "Our Partners" },
+    "card": {
+      "heading": "We have a debit card",
+      "sub": "Take advantage of our exclusive Mastercard Debit Card offer. Get yours now!",
+      "description": [
+        "Multi-Currency Account (Gel / USD / EUR)",
+        "International network - 150 currencies in 210 countries",
+        "36 mln merchants and 3.3 mln ATMs",
+        "Confidential, safe and secure debit card"
+      ],
+      "action": "Order Debit Card"
+    },
+    "wallet": {
+      "heading": "We have e-wallet",
+      "sub": "Experience the future of finance by exploring and using our e-wallet. Get started now!",
+      "description": [
+        "Offers more comfort to each customer",
+        "Easy, fast, convenient, safe and secure",
+        "Provides access to various cards",
+        "Helps to manage daily finances"
+      ]
+    },
+    "loan": {
+      "heading": "We offer loans",
+      "sub": "Unlock additional loan opportunities online through our extensive partner network.",
+      "description": [
+        "Secure added funds through our partner loans with a single click",
+        "Unlock substantial borrowing potential through partners with raised loan ceilings",
+        "Easily secure additional loans online, no complex steps",
+        "Easily manage multiple loans with one mobile app"
+      ]
+    },
+    "crypto": {
+      "heading": "We’re crypto-friendly",
+      "sub": "Unlock crypto potential: Transfer funds instantly to trusted partner platforms.",
+      "description": [
+        "Transfer funds smoothly from your e-wallet to partner crypto platforms",
+        "Your funds reach reputable crypto platforms securely",
+        "Move funds seamlessly for diversified investments",
+        "Monitor transfer history, maintaining transparent records"
+      ]
+    },
+    "products": {
+      "heading": "Join The Future!",
+      "app": "Downloading app from stores",
+      "register": "Online registration",
+      "topUp": "Top up e-wallet balance",
+      "utilities": "Paying utility bills online",
+      "wallet": "E-wallet capabilities",
+      "crypto": "Crypto-Friendly e-wallet",
+      "offer": "Additional online loan",
+      "unistream": "Individual exclusive offers"
+    },
+    "security": {
+      "heading": "Confidentiality & Security",
+      "insurance": "Our constant priority is to ensure the security of your confidentiality.",
+      "privacy": "Your security matters, and so do your payments and transactions with us.",
+      "security": "We`re dedicated to keeping your data safe and secure."
+    },
+
+    "highlights": {
+      "heading": "WallyPay Journey",
+      "download": "Download WallyPay",
+      "register": "Register easily",
+      "topUp": "Top-up balance",
+      "wallet": "Start using e-wallet",
+      "utilities": "Pay the utilities",
+      "loan": "Add a loan online",
+      "card": "Get your debit card",
+      "transfer": "Transfer to exchange"
+    }
+  },
+  "shared": {
+    "products": "Products",
+    "partnership": "Partnership",
+    "about": "About",
+    "contact": "Contact",
+    "becomeAPartner": "Become a Partner",
+    "orderDebitCard": "Order Debit Card"
+  }
+}

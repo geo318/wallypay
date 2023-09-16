@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { NavItem } from './NavItem'
 import { NavbarProps } from './types'
 import { useNavbar } from './useNavbar'
-import { Button, Logo, MasterCard } from '/components'
+import { Button, Logo, MasterCard, Switcher } from '/components'
 
 export const Navbar: React.FC<NavbarProps> = () => {
   const { navList } = useNavbar()
@@ -14,6 +14,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           {navList.map((item) => (
             <NavItem key={item.text} {...item} />
           ))}
+          <Switcher />
         </nav>
         <div className='flex gap-6 ml-auto'>
           <Button
