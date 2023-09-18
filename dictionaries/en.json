@@ -88,9 +88,16 @@
       "products": "Products",
       "partnership": "Partnership",
       "about": "About",
+      "blog": "Blog",
       "contact": "Contact",
       "becomeAPartner": "Become a Partner",
-      "orderDebitCard": "Order Debit Card"
+      "orderDebitCard": "Order Debit Card",
+      "nav": {
+        "card": "WallyPay Debit Card",
+        "wallet": "E Wallet",
+        "crypto": "Crypto-Friendly Wallet",
+        "loan": "Online Loan"
+      }
     },
     "footer": {
       "heading": {
@@ -113,5 +120,50 @@
       },
       "copy": "Copyright © 2023 all rights reserved"
     }
+  },
+  "debit_card": {
+    "h1": "WallyPay Debit Card",
+    "sections": [
+      {
+        "h2": null,
+        "p": [
+          "If you are already a WallyPay user, then you can order an international Wally MasterCard card.",
+          "The main advantage of Wally-Card is security in case of online and physical payment. The Wally card is equipped with the latest technology that eliminates fraudulent transactions. Do not forget, confidentiality is guaranteed, and information about you is carefully stored and protected.",
+          "With Wally card you will be able to pay at physical and online merchants in more than 210 countries, and you will be able to withdraw money easily from any ATM.",
+          "Request a Wally card at Euro Credit branches, or order it online, here:"
+        ]
+      },
+      {
+        "h2": "Contactless Payment Card",
+        "p": [
+          "WallyPay's international Mastercard can be used anywhere in the world where the MasterCard system is operating.",
+          "The Wally-Card can be used at trade outlets, online payments and cash withdrawals at any ATMs in Georgia.",
+          "The Wally-Card is equipped with the latest technology Chip, which completely protects the card holder from counterfeit transactions by generating a unique code along with the PIN code.",
+          "Most Importantly, using an anonymous card is completely safe when paying online and it also confidentially stores information about the payer."
+        ]
+      },
+      {
+        "h2": "Other Features:",
+        "li": [
+          "The Wally-Card can be used with a multi-currency account (GE, USD, EUR)",
+          "In the international network, Wally-Card can be used in around 210 countries, in 150 currencies, 36 mln POS and 3.3 mln ATMs",
+          "Wally_Card can be used in more than 62000 POS and 2500 ATMs in Georgia"
+        ]
+      }
+    ]
+  },
+  "order_card": {
+    "h1": "WallyPay Debit Card",
+    "sections": [
+      {
+        "h2": null,
+        "p": [
+          "If you are already a WallyPay user, then you can order an international Wally MasterCard card.",
+          "The main advantage of Wally-Card is security in case of online and physical payment. The Wally card is equipped with the latest technology that eliminates fraudulent transactions. Do not forget, confidentiality is guaranteed, and information about you is carefully stored and protected.",
+          "With Wally card you will be able to pay at physical and online merchants in more than 210 countries, and you will be able to withdraw money easily from any ATM.",
+          "Request a Wally card at Euro Credit branches, or order it online, here:"
+        ]
+      }
+    ]
   }
 }

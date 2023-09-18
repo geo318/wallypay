@@ -1,5 +1,6 @@
+
 export type NavItemProps = {
-  text: string;
-  link: string;
-  locale?: string;
-};
+  text: string
+  link: string
+  menu: {}[]
+}

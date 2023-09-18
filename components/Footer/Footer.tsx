@@ -5,7 +5,7 @@ import { footer } from '/config'
 
 export const Footer = ({ text }: { text: SharedText['footer'] }) => {
   return (
-    <footer className='bg-app-blue-dark text-white relative'>
+    <footer className='bg-app-blue-dark text-white relative mt-auto'>
       <div className='max-w-[100rem] mx-auto grid grid-cols-10 py-14'>
         <section className='col-span-2 text-center'>
           <Logo className='mx-auto' />
@@ -14,7 +14,7 @@ export const Footer = ({ text }: { text: SharedText['footer'] }) => {
           {footer.map(({ name, list }) => (
             <FooterUl key={name} items={list} text={text} heading={text.heading[name]} />
           ))}
-        </section>g
+        </section>
         <section className='col-span-2'>
           <div className='flex flex-col gap-7 items-center'>
             <Apple className='fill-app-blue w-36' />

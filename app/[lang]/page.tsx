@@ -11,14 +11,10 @@ import {
 } from '/components'
 import { banner } from '/public'
 import { cards } from '/config'
-import { Locale } from '/types'
+import { PageProps } from '/types'
 import { getDictionary } from '/lib/dictionary'
 
-export default async function Admin({
-  params: { lang },
-}: {
-  params: { lang: Locale }
-}) {
+export default async function Admin({ params: { lang } }: PageProps) {
   const { home } = await getDictionary(lang)
 
   return (

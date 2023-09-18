@@ -11,7 +11,7 @@ export const contentType = 'image/png'
 
 export default function Icon() {
   return new ImageResponse(
-    <Logo w viewBox='0 -4 66 46'/>,
+    <Logo w viewBox='0 -10 66 50'/>,
     {
       ...size,
     }

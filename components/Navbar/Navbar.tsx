@@ -1,18 +1,20 @@
 import Link from 'next/link'
 import { NavItem } from './NavItem'
 import { NavbarProps } from './types'
-import { useNavbar } from './useNavbar'
 import { Button, Logo, MasterCard, Switcher } from '/components'
+import { navList } from '/config'
 
 export const Navbar: React.FC<NavbarProps> = ({ text }) => {
-  const { navList } = useNavbar()
   return (
     <header className='text-white font-bold text-lg py-7 bg-app-blue-dark px-16'>
       <div className='flex items-center'>
-        <Logo className='w-[12.5rem]' />
+        <Link href='/'>
+          <Logo className='w-[12.5rem]' />
+        </Link>
+
         <nav className='flex ml-10 gap-8'>
           {navList.map((item) => (
-            <NavItem key={item.text} {...item} />
+            <NavItem key={item.name} {...item} text={text} />
           ))}
           <Switcher />
         </nav>
@@ -21,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ text }) => {
             variant='primary'
             className='bg-app-blue-dark text-white border-white'
           >
-            Become a Partner
+            {text.becomeAPartner}
           </Button>
           <Link href='/'>
             <Button
@@ -29,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ text }) => {
               className='bg-app-blue border-app-blue hover:bg-app-blue hover:bg-opacity-90'
             >
               <MasterCard />
-              Order Debit Card
+              {text.orderDebitCard}
             </Button>
           </Link>
         </div>

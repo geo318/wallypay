@@ -6,3 +6,4 @@ import lock from './lock.png'
 export { banner, card, lock, walletb }
 export * from './partners'
 export * from './products'
+export * from './pages'

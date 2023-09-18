@@ -86,12 +86,19 @@
 
   "shared": {
     "header": {
-      "products": "Products",
-      "partnership": "Partnership",
-      "about": "About",
-      "contact": "Contact",
-      "becomeAPartner": "Become a Partner",
-      "orderDebitCard": "Order Debit Card"
+      "products": "პროდუქტები",
+      "partnership": "პარტნიორობა",
+      "about": "ჩვენს შესახებ",
+      "blog": "ბლოგი",
+      "contact": "კონტაქტი",
+      "becomeAPartner": "გახდი პარტნიორი",
+      "orderDebitCard": "ბარათის შეკვეთა",
+      "nav": {
+        "card": "ვოლიფეის სადებეტო ბარათი",
+        "wallet": "ელექტრონული საფულე",
+        "crypto": "კრიპტო-მეგობრული საფულე",
+        "loan": "ონლაინ სესხი"
+      }
     },
     "footer": {
       "heading": {
@@ -114,5 +121,50 @@
       },
       "copy": "Copyright © 2023 all rights reserved"
     }
+  },
+  "debit_card": {
+    "h1": "ვოლი-ბარათი",
+    "sections": [
+      {
+        "h2": null,
+        "p": [
+          "თუ უკვე WallyPay-ის მომხმარებლებს შორის ხარ, მაშინ შეგიძლია შეუკვეთო საერთაშორისო Wally მასტერქარდ ბარათი.",
+          "მისი ერთ-ერთი მნიშვნელოვანი უპირატესობა უსაფრთხოებაა, ონლაინ, თუ ფიზიკური გადახდებისას. Wally ბარათი აღჭურვილია უახლესი ტექნოლოგიით, რომელიც თავიდან აგარიდებს გაყალბებულ ოპერაციებს. არ დაგვიწყდეს, კონფიდენციალობა გარანტირებულია, შენ შესახებ ინფორმაცია კი საგულდაგულოდ არის შენახული და დაცული.",
+          "Wally ბარათით 210-ზე მეტი ქვეყნის ფიზიკურ და ონლაინ სავაჭრო ობიექტებში შეძლებ გადახდას, თანხის განაღდებას კი ნებისმიერი ბანკომატიდან მარტივად მოახერხებ.",
+          "მოითხოვე Wally ბარათი ევრო კრედიტის ფილიალებში, ან შეუკვეთე აქ"
+        ]
+      },
+      {
+        "h2": "უკონტაქტო გადახდის ბარათი",
+        "p": [
+          "ვოლიფეის საერთაშორისო მასტერქარდ ბარათის გამოყენება შესაძლებელია მსოფლიოს ნებისმიერ წერტილში, სადაც მასტერქარდის საბარათე სისტემა გამოიყენება.",
+          "ბარათის გამოყენება შესაძლებელია სავაჭრო ობიექტებზე, ონლაინ გადახდებისა და თანხის განაღდებისას, საქართველოს ნებისმიერ ბანკომატში.",
+          "ვოლი ბარათი აღჭურვილია უახლესი ტექნოლოგიის ჩიპით, რომელიც სრულიად იცავს ბარათის მფლობელს გაყალბებული ოპერაციებისგან PIN კოდთან ერთად უნიკალური კოდის დაგენერირებით.",
+          "რაც მთავარია, უსახელო ბარათის გამოყენება სრულიად უსაფრთხოა ონლაინ გადახდებისას და კონფიდენციალურად ინახავს ინფორმაციას გადამხდელის შესახებ."
+        ]
+      },
+      {
+        "h2": "შესაძლებლობები:",
+        "li": [
+          "ვოლი ბარათის გამოყენება შესაძლებელია მულტისავალუტო ანგარიშით (GEL, USD, EUR)",
+          "საერთაშორისო ქსელში WALLYPAY CARD -ით სარგებლობა შესაძლებელია 210 ქვეყანაში, 150 ვალუტაში, 36 mln ობიექტსა და 3.3 mln ბანკომატში",
+          "საქართველოში ბარათის გამოყენება შესაძლებელია 62000 სხვადასხვა სავაჭრო ობიექტზე და 2500 ბანკომატში"
+        ]
+      }
+    ]
+  },
+  "order_card": {
+    "h1": "WallyPay Debit Card",
+    "sections": [
+      {
+        "h2": null,
+        "p": [
+          "If you are already a WallyPay user, then you can order an international Wally MasterCard card.",
+          "The main advantage of Wally-Card is security in case of online and physical payment. The Wally card is equipped with the latest technology that eliminates fraudulent transactions. Do not forget, confidentiality is guaranteed, and information about you is carefully stored and protected.",
+          "With Wally card you will be able to pay at physical and online merchants in more than 210 countries, and you will be able to withdraw money easily from any ATM.",
+          "Request a Wally card at Euro Credit branches, or order it online, here:"
+        ]
+      }
+    ]
   }
 }

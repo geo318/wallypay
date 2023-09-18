@@ -25,10 +25,13 @@ export default async function RootLayout({
   const { shared } = await getDictionary(lang)
   return (
     <html lang='en'>
-      <body style={font.style} className='text-app-black'>
-        <Navbar text={shared.header}/>
-        <main className='mx-auto max-w-[100rem]'>{children}</main>
-        <Footer text={shared.footer}/>
+      <body
+        style={font.style}
+        className='text-app-black min-h-screen flex flex-col'
+      >
+        <Navbar text={shared.header} />
+        <main className='mx-auto max-w-[100rem] w-full'>{children}</main>
+        <Footer text={shared.footer} />
       </body>
     </html>
   )
