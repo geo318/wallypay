@@ -2,6 +2,7 @@ import { FooterUl } from './FooterUl'
 import { Android, Apple, Logo } from '/components'
 import { SharedText } from '/types'
 import { footer } from '/config'
+import Link from 'next/link'
 
 export const Footer = ({ text }: { text: SharedText['footer'] }) => {
   return (
@@ -12,13 +13,28 @@ export const Footer = ({ text }: { text: SharedText['footer'] }) => {
         </section>
         <section className='grid grid-cols-3 col-span-6'>
           {footer.map(({ name, list }) => (
-            <FooterUl key={name} items={list} text={text} heading={text.heading[name]} />
+            <FooterUl
+              key={name}
+              items={list}
+              text={text}
+              heading={text.heading[name]}
+            />
           ))}
         </section>
         <section className='col-span-2'>
           <div className='flex flex-col gap-7 items-center'>
-            <Apple className='fill-app-blue w-36' />
-            <Android className='fill-app-blue w-36' />
+            <Link
+              href='https://apps.apple.com/us/app/wallypay/id1499628677'
+              target='_blank'
+            >
+              <Apple className='fill-app-blue w-36' />
+            </Link>
+            <Link
+              href='https://play.google.com/store/apps/details?id=com.wallypay'
+              target='_blank'
+            >
+              <Android className='fill-app-blue w-36' />
+            </Link>
           </div>
         </section>
       </div>
