@@ -25,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({ text }) => {
           >
             {text.becomeAPartner}
           </Button>
-          <Link href='/'>
+          <Link href='/debit-card/order'>
             <Button
               variant='primary'
               className='bg-app-blue border-app-blue hover:bg-app-blue hover:bg-opacity-90'

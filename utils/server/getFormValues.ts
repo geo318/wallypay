@@ -1,24 +1,21 @@
-export const getFormValues = <
-  TObj extends { [K in keyof TObj]: TObj[K] },
-  X extends keyof TObj | {} = {}
->(
+export const getFormValues = <TObj extends { [K in keyof TObj]: TObj[K] }>(
   formData: FormData
-): [Omit<TObj, X extends keyof TObj ? X : never>, Blob | undefined] => {
+): [{ [K in keyof TObj]: TObj[K] extends Blob ? never : TObj[K] }, Blob[]] => {
   const formDataEntries = Array.from(formData.entries()) as Array<
     [keyof TObj, TObj[keyof TObj] | any]
   >
 
   const mappedEntries = {} as TObj
-  let file: Blob | undefined
+  let fileList: Blob[] = []
 
   for (const [key, val] of formDataEntries) {
     if (val instanceof Blob) {
-      file = val
+      fileList.push(val)
       continue
     }
 
     mappedEntries[key] = val
   }
 
-  return [mappedEntries, file]
+  return [mappedEntries, fileList]
 }

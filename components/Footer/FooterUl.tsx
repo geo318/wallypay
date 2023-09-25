@@ -12,8 +12,8 @@ export const FooterUl: React.FC<{
       <h5 className='font-bold mb-5'>{heading}</h5>
       <ul className='flex flex-col gap-3'>
         {items.map(({ name, link }) => (
-          <li key={link} className='text-sm'>
-            <Link href={link} className='balanced'>
+          <li key={name} className='text-sm'>
+            <Link href={link || '#'} className='balanced'>
               {text.list[name]}
             </Link>
           </li>

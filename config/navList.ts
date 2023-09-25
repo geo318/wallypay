@@ -4,7 +4,7 @@ export const navList = [
     link: '',
     menu: [
       { name: 'card', link: '/debit-card' },
-      { name: 'wallet', link: '/' },
+      { name: 'wallet', link: '/wallet' },
       { name: 'crypto', link: '/' },
       { name: 'loan', link: '/' },
     ],

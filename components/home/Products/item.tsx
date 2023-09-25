@@ -6,7 +6,7 @@ import { HomeText } from '/types'
 import { ItemProps } from './types'
 
 export const Item = ({ link, image, name, text }: ItemProps) => (
-  <Link href={link}>
+  <Link href={link || '#'}>
     <Anima>
       <div className='flex flex-col gap-4 max-w-[9rem]'>
         <Image src={image} alt={text[name]} />

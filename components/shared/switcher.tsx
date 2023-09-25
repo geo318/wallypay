@@ -9,7 +9,7 @@ export function Switcher() {
   const pathname = usePathname()
   return (
     <ul className='flex font-medium text-sm'>
-      {locales.map((locale) => (
+      {locales?.map((locale) => (
         <li
           key={locale}
           className={twMerge(pathname.startsWith(`/${locale}`) && 'hidden')}

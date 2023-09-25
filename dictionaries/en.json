@@ -153,17 +153,79 @@
     ]
   },
   "order_card": {
-    "h1": "WallyPay Debit Card",
+    "h1": "Order Card",
+    "sections": [
+      {
+        "h2": "Still not having a WallyCard?",
+        "p": [
+          "Do not give up on the Future Opportunities! Order WallyCard right now and take advantage of innovative online services. WallyCard holders can pay / receive funds with mobile app without leaving home. You will also be able to pay with any POS terminal where MasterCard works, withdraw money from any ATM in Georgia and not only, get a pre-approved instant online loan and soon to receive international transfers from around the world."
+        ]
+      },
+      {
+        "h2": "Join us and become the part of the FUTURE!",
+        "li": [
+          "Use in more than 210 countries",
+          "Take advantage of online payments at international and local online shops",
+          "Get a salary or any transfer on a Non-Bank Card",
+          "Cash out at more than 2 500 ATMs and Pay with 62,000 POS terminals at merchants",
+          "Very Soon, receive cashback from our partners!"
+        ]
+      }
+    ],
+    "footer": {
+      "text": "To order a card, you need to fill out the form below and our operator will contact you within 24 hours.",
+      "email": "support@wallypay.eu"
+    },
+    "form": {
+      "heading": "Order card",
+      "inputs": {
+        "name": { "label": "Name", "placeholder": "Your First name" },
+        "last_name": { "label": "Last Name", "placeholder": "Your Last name" },
+        "email": { "label": "Email", "placeholder": "your@email.com" },
+        "phone": { "label": "Phone", "placeholder": "xxxxxxxxx" },
+        "address": { "label": "Address", "placeholder": "Delivery address" },
+        "personal_id": { "label": "Personal Id", "placeholder": "Name" },
+        "message": { "label": "Comment", "placeholder": "Additional comment" },
+        "id_image_facing_front": {
+          "label": "Id image facing front",
+          "placeholder": ""
+        },
+        "id_image_facing_back": {
+          "label": "Id image facing back",
+          "placeholder": ""
+        },
+        "your_selfie_while_holding_id": {
+          "label": "Your Selfie While Holding Id",
+          "placeholder": ""
+        }
+      },
+      "upload": "Please upload photos of your ID/Passport",
+      "selfie": "Please upload your photo holding your ID card where identification information is shown clearly",
+      "verify": "by checking I agree to e-wallet and card usage Terms and Conditions."
+    }
+  },
+  "wallet": {
+    "h1": "Electronic Wallet",
     "sections": [
       {
         "h2": null,
         "p": [
-          "If you are already a WallyPay user, then you can order an international Wally MasterCard card.",
-          "The main advantage of Wally-Card is security in case of online and physical payment. The Wally card is equipped with the latest technology that eliminates fraudulent transactions. Do not forget, confidentiality is guaranteed, and information about you is carefully stored and protected.",
-          "With Wally card you will be able to pay at physical and online merchants in more than 210 countries, and you will be able to withdraw money easily from any ATM.",
-          "Request a Wally card at Euro Credit branches, or order it online, here:"
+          "In WallyPay’s mobile app you will find a high-tech electronic wallet that offers innovative financial management capabilities. Our future electronic wallet provides flexible and instant management of personal finances.",
+          "Most importantly, any financial transaction is done online, without tedious procedures and allows you to manage your finances anytime, anywhere.",
+          "WallyPay’s electronic wallet will also allow you to cover utility costs without leaving home, make personal transfers and more."
+        ]
+      },
+      {
+        "h2": "Electronic wallet and its advantages:",
+        "li": [
+          "Offers more comfort to each customer;",
+          "Safe and secure;",
+          "Provides access to various cards;",
+          "Helps us manage our daily finances;",
+          "Easy, fast and convenient;"
         ]
       }
-    ]
+    ],
+    "footer": "Download the WallyPay’s mobile app and use the electronic wallet daily."
   }
 }
