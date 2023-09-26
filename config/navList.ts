@@ -5,12 +5,12 @@ export const navList = [
     menu: [
       { name: 'card', link: '/debit-card' },
       { name: 'wallet', link: '/wallet' },
-      { name: 'crypto', link: '/' },
-      { name: 'loan', link: '/' },
+      { name: 'crypto', link: '/crypto' },
+      { name: 'loan', link: '/loan' },
     ],
   },
   { name: 'partnership', link: '/products', menu: [] },
   { name: 'about', link: '/about', menu: [] },
-  { name: 'blog', link: '/contact', menu: [] },
+  { name: 'blog', link: '/blog', menu: [] },
   { name: 'contact', link: '/contact', menu: [] },
 ] as const

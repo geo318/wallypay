@@ -10,13 +10,13 @@ export const DownloadApp = ({ text }: { text?: string }) => (
         href='https://apps.apple.com/us/app/wallypay/id1499628677'
         target='_blank'
       >
-        <Image src={apple} alt='apple' draggable={false} width={200} />
+        <Image src={apple} alt='apple' draggable={false} height={60} />
       </Link>
       <Link
         href='https://play.google.com/store/apps/details?id=com.wallypay'
         target='_blank'
       >
-        <Image src={android} alt='android' draggable={false} width={200} />
+        <Image src={android} alt='android' draggable={false} height={60} />
       </Link>
     </div>
   </section>

@@ -4,4 +4,5 @@ import { PageText } from '/types'
 export type PageProps = {
   texts: PageText
   childSet?: React.ReactNode[]
+  className?: string
 }

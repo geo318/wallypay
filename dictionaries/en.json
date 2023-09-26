@@ -227,5 +227,33 @@
       }
     ],
     "footer": "Download the WallyPay’s mobile app and use the electronic wallet daily."
+  },
+  "crypto": {
+    "h1": "Crypto-Friendly Wallet",
+    "sections": [
+      {
+        "h2": null,
+        "p": [
+          "WallyPay’s mobile app is open for cooperation with crypto exchanges. Direct transfer of money from our e-wallet to the Cryptal platform under the best conditions is now easily possible.",
+          "We allow people to transfer and withdraw funds from the Cryptal trading exchange to the WallyPay’s Mastercard.",
+          "In the future, WallyPay also plans to partner with other crypto exchanges and we believe that our crypto-friendly e-wallet will make it easier for many people to interact with crypto exchanges."
+        ]
+      }
+    ]
+  },
+  "loan": {
+    "h1": "Online Loan",
+    "sections": [
+      {
+        "h2": "WallyPay is a mobile app created to make your life easier",
+        "p": [
+          "Now you can add the desired amount of money to your current “Euro Credit” auto loan without leaving your home. Also, you can get the highest increased cash limit.",
+          "The loan will be approved very quickly, and the amount will appear in your e-wallet instantly, for this you do not need to come to the branch physically. Stay comfortable, save your precious time and energy.",
+          "We created WallyPay with future experience, so you can fulfill your future financial desires in the present, right now!",
+          "Do not forget to order a safe and secure Wally Mastercard. With the Wally card you will be able to pay at physical and online merchants in more than 210 countries."
+        ]
+      }
+    ],
+    "footer": "WallyApp - 24 hours, 7 days a week at your disposal!"
   }
 }
