@@ -1,19 +1,20 @@
+import { routes } from './routes'
 export const footer = [
   {
     name: 'products',
     list: [
-      { name: 'card', link: '' },
-      { name: 'wallet', link: '' },
-      { name: 'crypto', link: '' },
-      { name: 'loan', link: '' },
+      { name: 'card', link: routes.card },
+      { name: 'wallet', link: routes.wallet },
+      { name: 'crypto', link: routes.crypto },
+      { name: 'loan', link: routes.loan },
     ],
   },
   {
     name: 'wallypay',
     list: [
-      { name: 'about', link: '' },
-      { name: 'partnership', link: '' },
-      { name: 'terms', link: '' },
+      { name: 'about', link: routes.about },
+      { name: 'partnership', link: routes.partnership },
+      { name: 'terms', link: routes.terms },
     ],
   },
   {
