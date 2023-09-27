@@ -41,7 +41,7 @@
       "action": "Learn More"
     },
     "crypto": {
-      "heading": "We’re crypto-friendly",
+      "heading": "We`re crypto-friendly",
       "sub": "Unlock crypto potential: Transfer funds instantly to trusted partner platforms.",
       "description": [
         "Transfer funds smoothly from your e-wallet to partner crypto platforms",
@@ -210,9 +210,9 @@
       {
         "h2": null,
         "p": [
-          "In WallyPay’s mobile app you will find a high-tech electronic wallet that offers innovative financial management capabilities. Our future electronic wallet provides flexible and instant management of personal finances.",
+          "In WallyPay`s mobile app you will find a high-tech electronic wallet that offers innovative financial management capabilities. Our future electronic wallet provides flexible and instant management of personal finances.",
           "Most importantly, any financial transaction is done online, without tedious procedures and allows you to manage your finances anytime, anywhere.",
-          "WallyPay’s electronic wallet will also allow you to cover utility costs without leaving home, make personal transfers and more."
+          "WallyPay`s electronic wallet will also allow you to cover utility costs without leaving home, make personal transfers and more."
         ]
       },
       {
@@ -226,7 +226,7 @@
         ]
       }
     ],
-    "footer": "Download the WallyPay’s mobile app and use the electronic wallet daily."
+    "footer": "Download the WallyPay`s mobile app and use the electronic wallet daily."
   },
   "crypto": {
     "h1": "Crypto-Friendly Wallet",
@@ -234,8 +234,8 @@
       {
         "h2": null,
         "p": [
-          "WallyPay’s mobile app is open for cooperation with crypto exchanges. Direct transfer of money from our e-wallet to the Cryptal platform under the best conditions is now easily possible.",
-          "We allow people to transfer and withdraw funds from the Cryptal trading exchange to the WallyPay’s Mastercard.",
+          "WallyPay`s mobile app is open for cooperation with crypto exchanges. Direct transfer of money from our e-wallet to the Cryptal platform under the best conditions is now easily possible.",
+          "We allow people to transfer and withdraw funds from the Cryptal trading exchange to the WallyPay`s Mastercard.",
           "In the future, WallyPay also plans to partner with other crypto exchanges and we believe that our crypto-friendly e-wallet will make it easier for many people to interact with crypto exchanges."
         ]
       }
@@ -255,5 +255,43 @@
       }
     ],
     "footer": "WallyApp - 24 hours, 7 days a week at your disposal!"
+  },
+  "partner": {
+    "h1": "Partnership",
+    "sections": [
+      {
+        "h2": "Want to be part of the innovation oriented team?",
+        "p": [
+          "Join us and create opportunities of the future with us! WallyPay offers a unique financial management experience for end customers: We work to create an open and intuitive system that will improve the lives of our clients - with less bureaucracy and more transparency."
+        ]
+      },
+      {
+        "h2": "Our partner can become any:",
+        "li": [
+          "Microfinance Organization - to move the customer relationship to a new, technological stage",
+          "Merchant - to join the card cashback system",
+          "Online service provider - those who need a solution to card transactions",
+          "Crypto Exchanges"
+        ]
+      }
+    ],
+    "footer": {
+      "text": "The number of our partners is growing every day as we provide them with constantly updated and exciting experiences and offers.",
+      "email": "Contact us at partnership@wallypay.eu and enjoy to travel to the FUTURE with us!"
+    }
+  },
+  "about": {
+    "h1": "What is WallyPay?",
+    "sections": [
+      {
+        "h2": null,
+        "p": [
+          "WallyPay is a new innovative fintech company on the Georgian market, of which high-tech platform provides a modern, independent and flexible financial management service to its customers. WallyPay combines a mobile app and an international card, supported by Mastercard, offering an innovative and outstanding services: We are dedicated to create an intuitive and friendly system that will improve your Financial Life – with less bureaucracy and more transparency.",
+          "WallyPay`s mobile app allows you to manage finances most easily and comfortably; get an instant online loan; convert money into different currencies and receive international money transfers.",
+          "Besides, you can pay at 36 million merchants around the world and withdraw money from ATMs by using WallyCard.",
+          "WallyPay is a card, E-Wallet and the most reliable partner in the connecting moments between the present and the future."
+        ]
+      }
+    ]
   }
 }

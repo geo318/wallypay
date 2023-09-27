@@ -9,8 +9,7 @@ export const navList = [
       { name: 'loan', link: '/loan' },
     ],
   },
-  { name: 'partnership', link: '/products', menu: [] },
+  { name: 'partnership', link: '/partnership', menu: [] },
   { name: 'about', link: '/about', menu: [] },
-  { name: 'blog', link: '/blog', menu: [] },
   { name: 'contact', link: '/contact', menu: [] },
 ] as const

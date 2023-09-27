@@ -3,9 +3,9 @@ export const Logo: React.FC<JSX.IntrinsicElements['svg'] & { w?: boolean }> = ({
   ...props
 }) => (
   <svg
-    width={w ? '64' : '200'}
-    height='42'
-    viewBox={`0 0 ${w ? '64' : '200'} 42`}
+    width={props.width || w ? '64' : '200'}
+    height={props.height || '42'}
+    viewBox={props.viewBox || `0 0 ${w ? '64' : '200'} 42`}
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
     {...props}

@@ -14,7 +14,6 @@ export const footer = [
       { name: 'about', link: '' },
       { name: 'partnership', link: '' },
       { name: 'terms', link: '' },
-      { name: 'blog', link: '' },
     ],
   },
   {
