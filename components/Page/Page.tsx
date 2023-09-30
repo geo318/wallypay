@@ -11,7 +11,7 @@ export function Page({ texts, childSet, className }: PageProps) {
         'text-black text-lg fade-in py-20 flex flex-col'
       )}
     >
-      <h1 className='text-6xl font-bold px-16'>{texts.h1}</h1>
+      <h1 className='text-6xl leading-normal font-bold px-16'>{texts.h1}</h1>
       {texts.sections.map(({ h2, p, li }, i) => (
         <section
           className={twMerge(

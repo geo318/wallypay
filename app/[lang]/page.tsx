@@ -63,7 +63,7 @@ export default async function Admin({ params: { lang } }: PageProps) {
         <Products text={home.products} />
       </section>
       <section className='flex flex-col gap-20 px-16 py-16'>
-        <Security text={home.security} />
+        <Security text={home.security} lang={lang} />
       </section>
       <section className='pt-20'>
         <Highlights text={home.highlights} />

@@ -118,7 +118,7 @@
       },
       {
         "h2": "Prohibited transactions",
-        "p": [
+        "li": [
           "The transactions, related to the follow up products are banned to be performed:",
           "Drug or drug related substances",
           "Guns or ammunitions;",
@@ -448,7 +448,7 @@
         ]
       },
       {
-        "h2": "V I. Utilizing the collected information",
+        "h2": "VI. Utilizing the collected information",
         "p": [
           "Information, collected by WallyPay shall be applied within the applicable law of Georgia, in pursuit of rendering best service, respective to the interests of the data subject. Purpose of utilizing information is as follows:",
           "Identification;",
@@ -464,7 +464,7 @@
         ]
       },
       {
-        "h2": "V I I. Transferring information collected to the third party.",
+        "h2": "VII. Transferring information collected to the third party.",
         "p": [
           "WallyPay may release the personal data contractual commitments performance and for another goals, prescribed by this policy. Information is to be released to:",
           "Banks and other financial institutions in order to render proper service to you (which will check, process and request or transfer your data to the third person if needed within the applicable law of Georgia.",
@@ -476,7 +476,7 @@
         ]
       },
       {
-        "h2": "V I I I. Application of links",
+        "h2": "VIII. Application of links",
         "p": [
           "„Links” are used to collect data from your web server.",
           "„Links“ contain information, saved to the hard disk of your computer. Links don`t contain personal information but statistical ones, describing our visit to the website, which enables us to improve the website and create personalized information.",

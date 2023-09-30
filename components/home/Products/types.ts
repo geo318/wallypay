@@ -7,5 +7,4 @@ export type ItemProps = {
   image: StaticImageData
   name: (typeof products)[number]['name']
   text: HomeText['products']
-  lang: (typeof locales)[number]
 }

@@ -1,10 +1,17 @@
 import Image from 'next/image'
 import { Anima, Button } from '/components'
 import { lock } from '/public'
-import { security } from '/config'
+import { locales, routes, security } from '/config'
 import { HomeText } from '/types'
+import Link from 'next/link'
 
-export const Security = ({ text }: { text: HomeText['security'] }) => {
+export const Security = ({
+  text,
+  lang,
+}: {
+  text: HomeText['security']
+  lang: (typeof locales)[number]
+}) => {
   return (
     <>
       <div className='flex gap-20'>
@@ -18,9 +25,11 @@ export const Security = ({ text }: { text: HomeText['security'] }) => {
             </p>
           </Anima>
           <div className='flex gap-8'>
-            <Button className='bg-app-gray-txt text-white hover:bg-black'>
-              {text.action}
-            </Button>
+            <Link href={`/${lang}${routes.confidentiality}`}>
+              <Button className='bg-app-gray-txt text-white hover:bg-black'>
+                {text.action}
+              </Button>
+            </Link>
           </div>
         </div>
         <div className='ml-auto basis-1/2'>
