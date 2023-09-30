@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { type PageProps } from './types'
-import { cardImg } from '/public'
 import { twMerge } from 'tailwind-merge'
 
 export function Page({ texts, childSet, className }: PageProps) {
