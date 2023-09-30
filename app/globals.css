@@ -47,8 +47,8 @@ header img {
 }
 
 .start {
-  translate: -100%;
-  opacity: 0.1;
+  translate: -10%;
+  opacity: 0;
 }
 
 .end {

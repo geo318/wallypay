@@ -1,7 +1,7 @@
 import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Footer, Navbar } from '/components'
+import { Footer, Navbar, ProgressBar } from '/components'
 import { Locale } from '/types'
 import { getDictionary } from '/lib'
 
@@ -29,6 +29,7 @@ export default async function RootLayout({
         style={font.style}
         className='text-app-black min-h-screen flex flex-col'
       >
+        <ProgressBar color='#1CC5FF' options={{ showSpinner: false }} />
         <Navbar text={shared.header} />
         <main className='mx-auto max-w-[100rem] w-full'>{children}</main>
         <Footer text={shared.footer} />

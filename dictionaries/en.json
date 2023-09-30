@@ -102,7 +102,7 @@
     "footer": {
       "heading": {
         "products": "Products",
-        "wallypay": "About Us",
+        "wallypay": "Wallypay",
         "contact": "Contact"
       },
       "list": {
@@ -293,5 +293,52 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "h1": "contact",
+    "phone": "+995 032 256 05 55",
+    "2nd_phone": "+995 595 60 80 20",
+    "email": "support@wallypay.eu",
+    "primary_address": "42 Alexander Kazbegi Ave., Georgia, Tbilisi",
+    "address": {
+      "h2": "Addresses",
+      "list": [
+        {
+          "name": "WallyPay",
+          "city": "Tbilisi",
+          "address": "42 Alexander Kazbegi Ave."
+        },
+        {
+          "name": "EuroCredit",
+          "city": "Tbilisi",
+          "address": "O. Khizanishvili №21"
+        },
+        {
+          "name": "EuroCredit",
+          "city": "Tbilisi",
+          "address": "AutoMarket Office №4"
+        },
+        {
+          "name": "EuroCredit",
+          "city": "Tbilisi",
+          "address": "Giorgi Saakadze №11"
+        },
+        {
+          "name": "EuroCredit",
+          "city": "Kutaisi",
+          "address": "King Tamar №15"
+        },
+        {
+          "name": "EuroCredit",
+          "city": "Batumi",
+          "address": "Ilia Chavchavadze №97"
+        },
+        {
+          "name": "EuroCredit",
+          "city": "Zugdidi",
+          "address": "M. Kostava №3"
+        }
+      ]
+    }
   }
 }
