@@ -30,9 +30,9 @@ export default async function RootLayout({
         className='text-app-black min-h-screen flex flex-col'
       >
         <ProgressBar color='#1CC5FF' options={{ showSpinner: false }} />
-        <Navbar text={shared.header} />
+        <Navbar text={shared.header} lang={lang} />
         <main className='mx-auto max-w-[100rem] w-full'>{children}</main>
-        <Footer text={shared.footer} />
+        <Footer text={shared.footer} lang={lang} />
       </body>
     </html>
   )

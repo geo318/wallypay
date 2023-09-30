@@ -1,10 +1,16 @@
 import { FooterUl } from './FooterUl'
 import { Android, Apple, Logo } from '/components'
 import { SharedText } from '/types'
-import { footer } from '/config'
+import { footer, locales } from '/config'
 import Link from 'next/link'
 
-export const Footer = ({ text }: { text: SharedText['footer'] }) => {
+export const Footer = ({
+  text,
+  lang,
+}: {
+  text: SharedText['footer']
+  lang: (typeof locales)[number]
+}) => {
   return (
     <footer className='bg-app-blue-dark text-white relative mt-auto'>
       <div className='max-w-[100rem] mx-auto grid grid-cols-10 py-14'>
@@ -18,6 +24,7 @@ export const Footer = ({ text }: { text: SharedText['footer'] }) => {
               items={list}
               text={text}
               heading={text.heading[name]}
+              lang={lang}
             />
           ))}
         </section>

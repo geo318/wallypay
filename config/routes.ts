@@ -7,6 +7,11 @@ export const routes = {
   loan: '/loan',
   about: '/about',
   partnership: '/partnership',
-  terms: '/terms',
   contact: '/contact',
+  terms: '/terms',
+  security: '/terms/security',
+  rules: '/terms/rules',
+  policy: '/terms/policy',
+  confidentiality: '/terms/confidentiality',
+  agreement: '/terms/agreement',
 }

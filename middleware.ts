@@ -8,13 +8,12 @@ export function middleware(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
 
-  if (pathnameIsMissingLocale && !pathname.startsWith('/api')) {
-    const locale = getLocale(request)
+  if (!pathnameIsMissingLocale) return NextResponse.next()
 
-    return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url))
-  }
+  const locale = getLocale(request)
+  return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.nextUrl))
 }
 
 export const config = {
-  matcher: ['/((?!_next).*)'],
+  matcher: ['/((?!_next|api|favicon.ico).*)'],
 }

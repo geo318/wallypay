@@ -340,5 +340,16 @@
         }
       ]
     }
+  },
+  "terms": {
+    "h1": "Terms and Conditions",
+    "h2": "Please be informed about our Terms & Conditions in the documentation linked below.",
+    "li": {
+      "policy": "WALLYPAY e-wallet terms & conditions",
+      "security": "WALLYPAY system security rules",
+      "rules": "Rules and Conditions of Card Usage",
+      "confidentiality": "Confidentiality and Security",
+      "agreement": "Payment Service Agreement"
+    }
   }
 }

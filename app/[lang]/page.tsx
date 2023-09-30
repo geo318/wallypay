@@ -49,7 +49,7 @@ export default async function Admin({ params: { lang } }: PageProps) {
         <Partners text={home.partners} />
       </section>
       <section className='bg-app-blue-light px-16 flex flex-col gap-28 py-32'>
-        {cards.map(({ button, image, name }) => (
+        {cards(lang).map(({ button, image, name }) => (
           <Anima key={home[name].heading}>
             <Card
               button={button(home[name].action)}

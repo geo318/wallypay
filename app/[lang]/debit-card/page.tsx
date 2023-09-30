@@ -14,7 +14,7 @@ export default async function DebitCard({ params: { lang } }: PageProps) {
       childSet={[
         <div key='db-card' className='flex flex-col grow'>
           <Image alt='debit card' src={cardImg} />
-          <Link href={routes.order} className='mt-auto mx-10 mb-10'>
+          <Link href={`/${lang}${routes.order}`} className='mt-auto mx-10 mb-10'>
             <Button
               variant='primary'
               className='bg-app-blue border-app-blue hover:bg-app-blue hover:bg-opacity-90 w-full'

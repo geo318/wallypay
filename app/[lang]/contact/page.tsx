@@ -25,14 +25,16 @@ export default async function DebitCard({ params: { lang } }: PageProps) {
             </div>
           </div>
         </section>
-        <section className='w-full'>
+        <section className='w-full h-80 relative'>
+          <div className='absolute bg-zinc-200 inset-0 -z-10 animate-pulse transition-all duration-200'/>
           <iframe
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.8693165532795!2d44.73818959046018!3d41.72333873192491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473104e1ef1fd%3A0x22b90265006c7d63!2s42%2F42a%20Alexander%20Kazbegi%20Ave%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1696062224495!5m2!1sen!2sge'
             width='100%'
-            height='300'
+            height='320'
             allowFullScreen={false}
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
+            className='bg-transparent'
           />
         </section>
         <section className='flex flex-col gap-3 p-16 max-w-4xl'>
