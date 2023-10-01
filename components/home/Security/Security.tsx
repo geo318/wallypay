@@ -14,10 +14,10 @@ export const Security = ({
 }) => {
   return (
     <>
-      <div className='flex gap-20'>
-        <div className='flex flex-col gap-12 basis-1/2 py-20'>
+      <div className='flex lg:flex-row flex-col lg:gap-20 gap-10'>
+        <div className='flex flex-col lg:gap-12 gap-5 basis-1/2 lg:py-20 py-10'>
           <Anima>
-            <h2 className='text-5xl font-bold'>{text.heading}</h2>
+            <h2 className='lg:text-5xl text-3xl font-bold'>{text.heading}</h2>
           </Anima>
           <Anima>
             <p className='balanced pr-5 font-normal text-lg text-[#484848] leading-8 max-w-2xl tracking-wider'>
@@ -32,25 +32,25 @@ export const Security = ({
             </Link>
           </div>
         </div>
-        <div className='ml-auto basis-1/2'>
+        <div className='ml-auto basis-1/2 lg:block hidden'>
           <figure className='flex p-5 pt-0'>
             <Anima>
               <Image
                 src={lock}
                 alt='banner'
-                className='max-w-md object-contain ml-auto'
+                className='lg:max-w-md xl:w-auto w-[23rem] object-contain lg:ml-auto'
                 priority
               />
             </Anima>
           </figure>
         </div>
       </div>
-      <div className='flex justify-between'>
+      <div className='flex justify-between flex-row gap-10 '>
         {security.map(({ desc, Icon }) => (
           <Anima key={text[desc]}>
             <div className='max-w-xs flex flex-col gap-6'>
               <Icon />
-              <p className='balanced text-sm font-medium text-app-gray-txt'>
+              <p className='balanced text-sm font-medium text-app-gray-txt sm:block hidden'>
                 {text[desc]}
               </p>
             </div>

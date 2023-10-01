@@ -13,16 +13,19 @@ import { banner } from '/public'
 import { cards } from '/config'
 import { PageProps } from '/types'
 import { getDictionary } from '/lib/dictionary'
+import Link from 'next/link'
 
 export default async function Admin({ params: { lang } }: PageProps) {
   const { home } = await getDictionary(lang)
 
   return (
-    <div className='text-black font-bold text-lg fade-in'>
-      <section className='mt-20 flex gap-32 px-16'>
-        <div className='flex flex-col gap-12 basis-1/2 py-20'>
-          <h2 className='text-6xl font-bold'>{home.main.heading}</h2>
-          <p className='pr-5 font-normal text-xl leading-8 max-w-2xl tracking-wider'>
+    <div className='text-black font-bold md:text-lg text-base fade-in'>
+      <section className='lg:mt-20 mt-14 flex lg:flex-row flex-col xl:gap-32 gap-5 xl:px-16 px-5'>
+        <div className='flex flex-col gap-12 basis-1/2 lg:py-20 py-10 pt-0'>
+          <h2 className='xl:text-6xl text-4xl font-bold'>
+            {home.main.heading}
+          </h2>
+          <p className='pr-5 font-normal lg:text-xl text-base leading-8 max-w-2xl lg:tracking-wider'>
             {home.main.Download}&nbsp;
             <span className='text-app-blue font-bold'>
               {home.main.wallypay}&nbsp;
@@ -30,11 +33,21 @@ export default async function Admin({ params: { lang } }: PageProps) {
             - {home.main.description}
           </p>
           <div className='flex gap-8'>
-            <Apple />
-            <Android />
+            <Link
+              href='https://apps.apple.com/us/app/wallypay/id1499628677'
+              target='_blank'
+            >
+              <Apple />
+            </Link>
+            <Link
+              href='https://play.google.com/store/apps/details?id=com.wallypay'
+              target='_blank'
+            >
+              <Android />
+            </Link>
           </div>
         </div>
-        <div className='ml-auto basis-1/2'>
+        <div className='ml-auto basis-1/2 flex items-center'>
           <figure className='flex bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-300 from-40% via-transparent to-transparent p-5 pt-0'>
             <Image
               src={banner}
@@ -45,10 +58,10 @@ export default async function Admin({ params: { lang } }: PageProps) {
           </figure>
         </div>
       </section>
-      <section className='pt-14 pb-28 px-16'>
+      <section className='pt-14 pb-28 xl:px-16 px-5'>
         <Partners text={home.partners} />
       </section>
-      <section className='bg-app-blue-light px-16 flex flex-col gap-28 py-32'>
+      <section className='bg-app-blue-light xl:px-16 px-5 flex flex-col xl:gap-28 gap-16 xl:py-32 py-14'>
         {cards(lang).map(({ button, image, name }) => (
           <Anima key={home[name].heading}>
             <Card
@@ -62,10 +75,10 @@ export default async function Admin({ params: { lang } }: PageProps) {
         ))}
         <Products text={home.products} />
       </section>
-      <section className='flex flex-col gap-20 px-16 py-16'>
+      <section className='flex flex-col lg:gap-20 gap-10 xl:px-16 px-5 xl:py-16 py-10'>
         <Security text={home.security} lang={lang} />
       </section>
-      <section className='pt-20'>
+      <section className='xl:pt-20 pt-10'>
         <Highlights text={home.highlights} />
       </section>
     </div>

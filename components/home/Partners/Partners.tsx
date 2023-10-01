@@ -7,9 +7,9 @@ export const Partners = ({ text }: { text: HomeText['partners'] }) => {
   return (
     <>
       <h3 className='text-3xl font-bold'>{text.heading}</h3>
-      <div className='flex flex-col gap-10 mt-24'>
+      <div className='flex md:flex-col flex-row gap-10 mt-24 justify-center'>
         {partners.map((section, i) => (
-          <div className='flex justify-around items-center' key={i}>
+          <div className='flex md:flex-row flex-col gap-10 md:gap-0 justify-around md:items-center items-start' key={i}>
             {section.map((partner) => (
               <Image src={partner} alt='' className='h-min' key={partner.src} />
             ))}

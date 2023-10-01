@@ -8,9 +8,11 @@ export default async function DebitCard({ params: { lang } }: PageProps) {
   const { terms } = await getDictionary(lang)
   return (
     <>
-      <article className='text-black text-lg fade-in py-20 flex flex-col'>
-        <h1 className='text-4xl font-bold px-16'>{terms.h1}</h1>
-        <ul className='flex flex-col gap-5 p-16 relative'>
+      <article className='text-black text-lg fade-in xl:py-20 pt-10 flex flex-col'>
+        <h1 className='xl:text-4xl text-2xl font-bold xl:px-16 px-5'>
+          {terms.h1}
+        </h1>
+        <ul className='flex flex-col gap-5 xl:p-16 py-10 px-5 relative'>
           {termItems.map(({ link, key }) => (
             <li key={key} className='list-disc ml-5'>
               <Link

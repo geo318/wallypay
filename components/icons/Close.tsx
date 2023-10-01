@@ -10,16 +10,16 @@ export const Close: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
     <path
       d='M16.25 36.1779L36.1779 16.25'
       stroke='#353131'
-      stroke-width='1.5'
-      stroke-linecap='round'
-      stroke-linejoin='round'
-    ></path>
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
     <path
       d='M36.1779 36.1779L16.25 16.25'
       stroke='#353131'
-      stroke-width='1.5'
-      stroke-linecap='round'
-      stroke-linejoin='round'
-    ></path>
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
   </svg>
 )
