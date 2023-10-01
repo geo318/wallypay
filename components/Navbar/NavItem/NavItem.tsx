@@ -17,7 +17,7 @@ export const NavItem: React.FC<
       <Link
         href={link ? `/${lang}${link}` : '#'}
         className={twMerge(
-          'hover:opacity-70 py-1',
+          'hover:opacity-70 py-1 transition-opacity duration-200',
           menu?.some((e) => pathname.includes(e.link)) ||
             (link && pathname.includes(link))
             ? 'border-b border-app-blue'

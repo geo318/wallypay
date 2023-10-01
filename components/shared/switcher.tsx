@@ -14,7 +14,10 @@ export function Switcher() {
           key={locale}
           className={twMerge(pathname.startsWith(`/${locale}`) && 'hidden')}
         >
-          <Link href={pathname.replace(/^\/(en|ka)/, `/${locale}`)}>
+          <Link
+            href={pathname.replace(/^\/(en|ka)/, `/${locale}`)}
+            className='hover:opacity-80 transition-opacity duration-200'
+          >
             {`${emojis[locale]} ${locale}`}
           </Link>
         </li>

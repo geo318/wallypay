@@ -2,88 +2,87 @@
   "home": {
     "main": {
       "heading": "Join The Future!",
-      "Download": "Download",
+      "Download": "ჩამოტვირთე",
       "wallypay": "WallyPay",
-      "description": "unleash the power of convenience with our E-Wallet app and claim your very own exclusive Mastercard Debit Card!"
+      "description": "შეიგრძენი კომფორტის ძალა ჩვენი ელ.საფულის გამოყენებით და მოითხოვე შენი საკუთარი ექსკლუზიური Mastercard სადებეტო ბარათი!"
     },
-    "partners": { "heading": "Our Partners" },
+    "partners": { "heading": "ჩვენი პარტნიორები" },
     "card": {
-      "heading": "We have a debit card",
-      "sub": "Take advantage of our exclusive Mastercard Debit Card offer. Get yours now!",
+      "heading": "სადებეტო ბარათი",
+      "sub": "ისარგებლე Mastercard-ის სადებეტო ბარათით. მოითხოვე შენი საკუთარი ახლავე!",
       "description": [
-        "Multi-Currency Account (Gel / USD / EUR)",
-        "International network - 150 currencies in 210 countries",
-        "36 mln merchants and 3.3 mln ATMs",
-        "Confidential, safe and secure debit card"
+        "მულტისავალუტო ანგარიში (ლარი / აშშ დოლარი / ევრო)",
+        "საერთაშორისო ქსელი - 150 ვალუტა 210 ქვეყანაში",
+        "36 მლნ მერჩანტი და 3,3 მლნ ATM",
+        "კონფიდენციალური და უსაფრთხო სადებეტო ბარათი"
       ],
-      "action": "Order Debit Card"
+      "action": "შეუკვეთე ბარათი"
     },
     "wallet": {
-      "heading": "We have e-wallet",
-      "sub": "Experience the future of finance by exploring and using our e-wallet. Get started now!",
+      "heading": "ელ.საფულე",
+      "sub": "განიცადე ფინანსების მომავალი ჩვენი ელ.საფულის გამოყენებით. დაიწყე ახლავე!",
       "description": [
-        "Offers more comfort to each customer",
-        "Easy, fast, convenient, safe and secure",
-        "Provides access to various cards",
-        "Helps to manage daily finances"
+        "უფრო მეტი კომფორტი თითოეულ მომხმარებელს",
+        "მარტივი, სწრაფი, მოსახერხებელი და უსაფრთხო",
+        "უზრუნველყოფს წვდომას სხვადასხვა ბარათებზე",
+        "გეხმარება ყოველდღიური ფინანსების მართვაში"
       ],
-      "action": "Learn More"
+      "action": "გაიგე მეტი"
     },
     "loan": {
-      "heading": "We offer loans",
-      "sub": "Unlock additional loan opportunities online through our extensive partner network.",
+      "heading": "სესხის დამატება",
+      "sub": "დაიმატე ჩვენს პარტნიორ კომპანიებთან არსებულ სესხზე თანხა მობილური აპლიკაციიდან.",
       "description": [
-        "Secure added funds through our partner loans with a single click",
-        "Unlock substantial borrowing potential through partners with raised loan ceilings",
-        "Easily secure additional loans online, no complex steps",
-        "Easily manage multiple loans with one mobile app"
+        "დაიმატე თანხები ერთი დაწკაპუნებით ჩვენი პარტნიორებისგან",
+        "მიიღე სესხი ყველაზე მაღალი გაზრდილი ფულადი ლიმიტით",
+        "მარტივად დაიმატე ახალი სესხი ონლაინ, რთული ნაბიჯების გარეშე",
+        "ადვილად მართე სხვადასხვა სესხი ერთი მობილური აპლიკაციით"
       ],
-      "action": "Learn More"
+      "action": "გაიგე მეტი"
     },
     "crypto": {
-      "heading": "We’re crypto-friendly",
-      "sub": "Unlock crypto potential: Transfer funds instantly to trusted partner platforms.",
+      "heading": "კრიპტო-მეგობრული",
+      "sub": "მყისიერად გადარიცხე თანხები სანდო პარტნიორ კრიპტო პლატფორმებზე.",
       "description": [
-        "Transfer funds smoothly from your e-wallet to partner crypto platforms",
-        "Your funds reach reputable crypto platforms securely",
-        "Move funds seamlessly for diversified investments",
-        "Monitor transfer history, maintaining transparent records"
+        "შეუფერხებლად გადაიტანე თანხები ელ.საფულიდან პარტნიორ კრიპტო პლატფორმებზე",
+        "დაადეპოზიტირე თანხები უსაფრთხოდ შენი ელ.საფულიდან კრიპტო პლატფორმებზე",
+        "გადაიტანე თანხები შენთვის სასურველი ინვესტიციების გასახორციელებლად",
+        "თვალი ადევნე შენს ტრანზაქციებს და გადატანლი თანხების ისტორიას"
       ],
-      "action": "Learn More"
+      "action": "გაიგე მეტი"
     },
     "products": {
-      "heading": "Join The Future!",
-      "app": "გადმოიწერე აპლიკაცია",
-      "register": "ონლაინ რეგისტრაცია",
-      "topUp": "შეავსე ბალანსი",
+      "heading": "ფინანსური მობილური აპლიკაცია",
+      "app": "ჩამოტვირთე აპლიკაცია",
+      "register": "დარეგისტრირდი ონლაინ",
+      "topUp": "შეავსე საფულის ბალანსი",
       "utilities": "გადაიხადე კომუნალურები",
-      "wallet": "ელექტრონული საფულე",
-      "crypto": "კრიპტოვალუტა",
-      "offer": "მიიღე სესხი",
-      "unistream": "ექსკულზიური შეთავაზებები"
+      "wallet": "გამოიყენე ელ.საფულე",
+      "crypto": "დაადეპოზიტე კრიპტო ბირჟაზე",
+      "offer": "დაიმატე სესხზე თანხა",
+      "unistream": "ისარგებლე შეთავაზებებით"
     },
     "security": {
-      "heading": "Confidentiality & Security",
-      "description": "Experience worry-free, confidential payments with our e-wallet app. Your security is our top priority, with robust encryption and cutting-edge safeguards in place to protect your personal and financial information. Trust us for a secure payment experience.",
-      "action": "Learn More",
-      "insurance": "Our constant priority is to ensure the security of your confidentiality.",
-      "privacy": "Your security matters, and so do your payments and transactions with us.",
-      "security": "We`re dedicated to keeping your data safe and secure."
+      "heading": "კონფიდენციალობა",
+      "description": "კონფიდენციალობა ჩვენს ელ.საფულეში გარანტირებულია. შენი უსაფრთხოება ჩვენი მთავარი პრიორიტეტია. შენი პირადი და ფინანსური ინფორმაცია საიმედოდაა დაცული. მიიღე უსაფრთხო გადახდის გამოცდილება.",
+      "action": "გაიგე მეტი",
+      "insurance": "შენი კონფიდენციალობის დაცვა ჩვენი მუდმივი პრიორიტეტია.",
+      "privacy": "მნიშვნელოვანია შენი გადახდების და ტრანზაქციების უსაფრთხოება.",
+      "security": "მზად ვართ დავიცვათ შენი პირადი და ფინანსური ინფორმაცია."
     },
 
     "highlights": {
-      "heading": "WallyPay Journey",
-      "download": "Download WallyPay",
-      "register": "Register easily",
-      "topUp": "Top-up balance",
-      "wallet": "Start using e-wallet",
-      "utilities": "Pay the utilities",
-      "loan": "Add a loan online",
-      "card": "Get your debit card",
-      "transfer": "Transfer to exchange"
+      "heading": "WallyPay მოგზაურობა",
+      "download": "გადმოწერე აპლიკაცია",
+      "register": "დარეგისტრირდი მარტივად",
+      "topUp": "შეივსე ბალანსი",
+      "wallet": "გამოიყენე ელ.საფულე",
+      "utilities": "გადაიხადე კომუნალურები",
+      "loan": "დაიმატე სესხი ონლაინ",
+      "card": "მიიღე შენი ბარათი",
+      "transfer": "გადარიცხე კრიპტო ბირჟებზე"
     }
   },
-
   "shared": {
     "header": {
       "products": "პროდუქტები",
@@ -92,7 +91,7 @@
       "blog": "ბლოგი",
       "contact": "კონტაქტი",
       "becomeAPartner": "გახდი პარტნიორი",
-      "orderDebitCard": "ბარათის შეკვეთა",
+      "orderDebitCard": "შეუკვეთე ბარათი",
       "nav": {
         "card": "ვოლიფეის სადებეტო ბარათი",
         "wallet": "ელექტრონული საფულე",
@@ -102,22 +101,22 @@
     },
     "footer": {
       "heading": {
-        "products": "Products",
-        "wallypay": "Wallypay",
-        "contact": "Contact"
+        "products": "პროდუქტები",
+        "wallypay": "ვოლიფეი",
+        "contact": "კონტაქტი"
       },
       "list": {
         "phone": "+995 032 256 05 55",
         "email": "support@wallypay.eu",
         "address": "42 Alexander Kazbegi Ave. | 0171 | Tbilisi",
-        "about": "About Us",
-        "partnership": "Become a Partner",
-        "terms": "Terms and Conditions",
-        "blog": "Blog",
-        "card": "WallyPay Debit Card",
-        "wallet": "E-Wallet",
-        "crypto": "Crypto-Friendly Wallet",
-        "loan": "Online Loan"
+        "about": "ჩვენს შესახებ",
+        "partnership": "გახდი ჩვენი პარტნიორი",
+        "terms": "წესები და პირობები",
+        "blog": "ბლოგი",
+        "card": "WallyPay სადებეტო ბარათი",
+        "wallet": "ელექტრონული საფულე",
+        "crypto": "კრიპტო-მეგობრული საფულე",
+        "loan": "სესხის ონლაინ დამატება"
       },
       "copy": "Copyright © 2023 all rights reserved"
     }
