@@ -18,7 +18,7 @@ export default async function DebitCard({ params: { lang } }: PageProps) {
               src={cryptoImg}
               height={300}
               width={500}
-              className='absolute object-cover top-0'
+              className='xl:absolute object-cover top-0 right-0'
             />
           </div>,
         ]}

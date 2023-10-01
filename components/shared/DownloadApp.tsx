@@ -3,7 +3,7 @@ import { android, apple } from '/public'
 import Image from 'next/image'
 
 export const DownloadApp = ({ text }: { text?: string }) => (
-  <section className='px-16 pb-16'>
+  <section className='px-16 lg:pb-16'>
     {text && <h2 className='pb-10 text-xl font-bold'>{text}</h2>}
     <div className='flex gap-5'>
       <Link

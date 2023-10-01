@@ -7,14 +7,14 @@ export function Page({ texts, childSet, className }: PageProps) {
     <article
       className={twMerge(
         className,
-        'text-black text-lg fade-in py-20 flex flex-col'
+        'text-black lg:text-lg text-base fade-in lg:py-20 py-10 flex flex-col'
       )}
     >
-      <h1 className='text-6xl leading-normal font-bold px-16'>{texts.h1}</h1>
+      <h1 className='lg:text-6xl text-3xl leading-normal font-bold lg:px-16 px-5'>{texts.h1}</h1>
       {texts.sections.map(({ h2, p, li }, i) => (
         <section
           className={twMerge(
-            'flex gap-32 p-16 relative',
+            'flex lg:flex-row flex-col lg:gap-32 gap-10 lg:p-16 p-5 py-10 relative',
             !((i + 1) % 2) && 'bg-app-blue-light'
           )}
           key={h2}
@@ -25,7 +25,7 @@ export function Page({ texts, childSet, className }: PageProps) {
               childSet?.[i] && 'basis-1/2'
             )}
           >
-            {h2 && <h2 className='text-3xl font-bold'>{h2}</h2>}
+            {h2 && <h2 className='lg:text-3xl text-xl font-bold'>{h2}</h2>}
             {li && (
               <ul className='flex flex-col gap-5 list-disc ml-5'>
                 {li.map((txt) => (
@@ -38,7 +38,7 @@ export function Page({ texts, childSet, className }: PageProps) {
             ))}
           </div>
           {childSet?.[i] ? (
-            <div className='flex flex-col gap-12 basis-1/2'>{childSet[i]}</div>
+            <div className='flex flex-col items-center gap-12 basis-1/2'>{childSet[i]}</div>
           ) : null}
         </section>
       ))}

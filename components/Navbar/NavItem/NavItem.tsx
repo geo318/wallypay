@@ -9,11 +9,11 @@ import { twMerge } from 'tailwind-merge'
 export const NavItem: React.FC<
   (typeof navList)[number] & { text: SharedText['header'] } & {
     lang: (typeof locales)[number]
-  }
-> = ({ name, link, menu, text, lang }) => {
+  } & { className?: string }
+> = ({ name, link, menu, text, lang, className }) => {
   const pathname = usePathname()
   return (
-    <li className='list-none font-medium text-sm group relative'>
+    <li className='list-none font-semibold lg:font-medium text-sm group relative'>
       <Link
         href={link ? `/${lang}${link}` : '#'}
         className={twMerge(
@@ -27,8 +27,13 @@ export const NavItem: React.FC<
         {text[name]}
       </Link>
       {!!menu.length && (
-        <div className='hidden group-hover:flex border-1 absolute left-1/2 -translate-x-1/2 z-50'>
-          <ul className='py-2 mt-7 bg-white w-64 rounded-md border-zinc-200 shadow-md text-sm font-medium'>
+        <div
+          className={twMerge(
+            'hidden group-hover:flex border-1 absolute left-1/2 -translate-x-1/2 z-50',
+            className
+          )}
+        >
+          <ul className='py-2 lg:mt-7 bg-white w-64 rounded-md border-zinc-200 lg:shadow-md text-sm font-medium'>
             {menu.map((item) => (
               <li
                 key={item.name}
