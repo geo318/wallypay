@@ -7,16 +7,32 @@ export const FooterUl: React.FC<{
   text: SharedText['footer']
   heading: string
   lang: (typeof locales)[number]
-}> = ({ items, text, heading, lang }) => {
+  sec: (typeof footer)[number]['name']
+}> = ({ items, text, heading, lang, sec }) => {
   return (
     <div>
       <h5 className='font-bold mb-5'>{heading}</h5>
       <ul className='flex flex-col gap-3'>
         {items.map(({ name, link }) => (
           <li key={name} className='text-sm'>
-            <Link href={`/${lang}${link}` || '#'} className='balanced'>
-              {text.list[name]}
-            </Link>
+            {sec === 'contact' ? (
+              <a
+                target='_blank'
+                href={
+                  name === 'email'
+                    ? `mailto:${link}`
+                    : name === 'phone'
+                    ? `tel:${link}`
+                    : link
+                }
+              >
+                {text.list[name]}
+              </a>
+            ) : (
+              <Link href={`/${lang}${link}` || '#'} className='balanced'>
+                {text.list[name]}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
