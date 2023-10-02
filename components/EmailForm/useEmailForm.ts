@@ -19,7 +19,7 @@ export const useEmailForm = () => {
 
     const formData = objToFormData(data)
     try {
-      await fetch('http://localhost:3400/api/send', {
+      await fetch(`${process.env.NEXT_PUBLIC_URL}/api/send`, {
         method: 'POST',
         body: formData,
       })
