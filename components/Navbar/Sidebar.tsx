@@ -23,7 +23,11 @@ export const Sidebar = (props: NavbarProps) => {
           <aside className='flex flex-col fixed inset-y-0 right-0 w-72 bg-white p-5 z-50 shadow-md'>
             <Close className='cursor-pointer ml-auto' onClick={toggle} />
             <div>
-              <Nav {...props} navItemClassName='relative flex shadow-none' />
+              <Nav
+                {...props}
+                toggle={toggle}
+                navItemClassName='relative flex shadow-none'
+              />
               <div className='flex flex-col gap-5 mt-10'>
                 <Link href={`/${props.lang}${routes.partnership}`}>
                   <Button

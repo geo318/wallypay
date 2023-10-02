@@ -4,9 +4,10 @@ import { NavItem } from './NavItem'
 import { NavbarProps } from './types'
 import { navList } from '/config'
 
-export const Nav: React.FC<NavbarProps> = ({
+export const Nav: React.FC<NavbarProps & { toggle?: () => void }> = ({
   text,
   lang,
+  toggle,
   className,
   navItemClassName,
 }) => (
@@ -18,6 +19,7 @@ export const Nav: React.FC<NavbarProps> = ({
         text={text}
         lang={lang}
         className={navItemClassName}
+        toggle={toggle}
       />
     ))}
     <Switcher />

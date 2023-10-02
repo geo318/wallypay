@@ -5,17 +5,23 @@ import { locales, navList } from '/config'
 import { SharedText } from '/types'
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
+import { NavItemProps } from './types'
 
-export const NavItem: React.FC<
-  (typeof navList)[number] & { text: SharedText['header'] } & {
-    lang: (typeof locales)[number]
-  } & { className?: string }
-> = ({ name, link, menu, text, lang, className }) => {
+export const NavItem: React.FC<NavItemProps> = ({
+  name,
+  link,
+  menu,
+  text,
+  lang,
+  toggle,
+  className,
+}) => {
   const pathname = usePathname()
   return (
     <li className='list-none font-semibold lg:font-medium text-sm group relative'>
       <Link
         href={link ? `/${lang}${link}` : '#'}
+        onClick={toggle}
         className={twMerge(
           'hover:opacity-70 py-1 transition-opacity duration-200',
           menu?.some((e) => pathname.includes(e.link)) ||
@@ -44,7 +50,11 @@ export const NavItem: React.FC<
                     : ''
                 )}
               >
-                <Link className='grow px-5 py-2' href={`/${lang}${item.link}`}>
+                <Link
+                  className='grow px-5 py-2'
+                  href={`/${lang}${item.link}`}
+                  onClick={toggle}
+                >
                   {text.nav[item.name]}
                 </Link>
               </li>
