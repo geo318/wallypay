@@ -4,7 +4,6 @@ import { emailSchema } from '/schema'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldValues, useForm } from 'react-hook-form'
 import { objToFormData } from '/utils'
-import { EmailForm } from '/types'
 
 export const useEmailForm = () => {
   const [message, setMessage] = useState({ error: '', success: '' })
