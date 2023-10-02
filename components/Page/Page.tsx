@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { type PageProps } from './types'
 import { twMerge } from 'tailwind-merge'
+import { Anima } from '../Anima'
 
 export function Page({ texts, childSet, className }: PageProps) {
   return (
@@ -10,7 +11,9 @@ export function Page({ texts, childSet, className }: PageProps) {
         'text-black lg:text-lg text-base fade-in lg:py-20 py-10 flex flex-col'
       )}
     >
-      <h1 className='lg:text-6xl text-3xl leading-normal font-bold lg:px-16 px-5'>{texts.h1}</h1>
+      <h1 className='lg:text-6xl text-3xl leading-normal font-bold lg:px-16 px-5'>
+        {texts.h1}
+      </h1>
       {texts.sections.map(({ h2, p, li }, i) => (
         <section
           className={twMerge(
@@ -29,16 +32,22 @@ export function Page({ texts, childSet, className }: PageProps) {
             {li && (
               <ul className='flex flex-col gap-5 list-disc ml-5'>
                 {li.map((txt) => (
-                  <li key={txt}>{txt}</li>
+                  <Anima key={txt}>
+                    <li>{txt}</li>
+                  </Anima>
                 ))}
               </ul>
             )}
             {p?.map((txt) => (
-              <p key={txt}>{txt}</p>
+              <Anima key={txt}>
+                <p key={txt}>{txt}</p>
+              </Anima>
             ))}
           </div>
           {childSet?.[i] ? (
-            <div className='flex flex-col items-center gap-12 basis-1/2'>{childSet[i]}</div>
+            <div className='flex flex-col items-center gap-12 basis-1/2'>
+              {childSet[i]}
+            </div>
           ) : null}
         </section>
       ))}

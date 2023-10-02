@@ -8,12 +8,14 @@ import {
   Security,
   Highlights,
   Anima,
+  Spinner,
 } from '/components'
 import { banner } from '/public'
 import { cards } from '/config'
 import { PageProps } from '/types'
 import { getDictionary } from '/lib/dictionary'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
 export default async function Admin({ params: { lang } }: PageProps) {
   const { home } = await getDictionary(lang)
@@ -37,13 +39,13 @@ export default async function Admin({ params: { lang } }: PageProps) {
               href='https://apps.apple.com/us/app/wallypay/id1499628677'
               target='_blank'
             >
-              <Apple height={40} width={120}/>
+              <Apple className='h-10 w-32 lg:h-auto lg:w-auto' />
             </Link>
             <Link
               href='https://play.google.com/store/apps/details?id=com.wallypay'
               target='_blank'
             >
-              <Android height={40} width={120}/>
+              <Android className='h-10 w-32 lg:h-auto lg:w-auto' />
             </Link>
           </div>
         </div>
@@ -59,27 +61,37 @@ export default async function Admin({ params: { lang } }: PageProps) {
         </div>
       </section>
       <section className='pt-14 xl:pb-28 pb-14 xl:px-16 px-5'>
-        <Partners text={home.partners} />
+        <Suspense fallback={<Spinner />}>
+          <Partners text={home.partners} />
+        </Suspense>
       </section>
       <section className='bg-app-blue-light xl:px-16 px-5 flex flex-col xl:gap-28 gap-16 xl:py-32 py-14'>
-        {cards(lang).map(({ button, image, name }) => (
-          <Anima key={home[name].heading}>
-            <Card
-              button={button(home[name].action)}
-              heading={home[name].heading}
-              sub={home[name].sub}
-              description={home[name].description}
-              image={image}
-            />
-          </Anima>
-        ))}
-        <Products text={home.products} />
+        <Suspense fallback={<Spinner />}>
+          {cards(lang).map(({ button, image, name }) => (
+            <Anima key={home[name].heading}>
+              <Card
+                button={button(home[name].action)}
+                heading={home[name].heading}
+                sub={home[name].sub}
+                description={home[name].description}
+                image={image}
+              />
+            </Anima>
+          ))}
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <Products text={home.products} />
+        </Suspense>
       </section>
       <section className='flex flex-col lg:gap-20 gap-10 xl:px-16 px-5 xl:py-16 py-4'>
-        <Security text={home.security} lang={lang} />
+        <Suspense fallback={<Spinner />}>
+          <Security text={home.security} lang={lang} />
+        </Suspense>
       </section>
       <section className='xl:pt-20 pt-10'>
-        <Highlights text={home.highlights} />
+        <Suspense fallback={<Spinner />}>
+          <Highlights text={home.highlights} />
+        </Suspense>
       </section>
     </div>
   )
