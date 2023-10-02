@@ -37,13 +37,13 @@ export default async function Admin({ params: { lang } }: PageProps) {
               href='https://apps.apple.com/us/app/wallypay/id1499628677'
               target='_blank'
             >
-              <Apple />
+              <Apple height={40} width={120}/>
             </Link>
             <Link
               href='https://play.google.com/store/apps/details?id=com.wallypay'
               target='_blank'
             >
-              <Android />
+              <Android height={40} width={120}/>
             </Link>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default async function Admin({ params: { lang } }: PageProps) {
           </figure>
         </div>
       </section>
-      <section className='pt-14 pb-28 xl:px-16 px-5'>
+      <section className='pt-14 xl:pb-28 pb-14 xl:px-16 px-5'>
         <Partners text={home.partners} />
       </section>
       <section className='bg-app-blue-light xl:px-16 px-5 flex flex-col xl:gap-28 gap-16 xl:py-32 py-14'>
@@ -75,7 +75,7 @@ export default async function Admin({ params: { lang } }: PageProps) {
         ))}
         <Products text={home.products} />
       </section>
-      <section className='flex flex-col lg:gap-20 gap-10 xl:px-16 px-5 xl:py-16 py-10'>
+      <section className='flex flex-col lg:gap-20 gap-10 xl:px-16 px-5 xl:py-16 py-4'>
         <Security text={home.security} lang={lang} />
       </section>
       <section className='xl:pt-20 pt-10'>

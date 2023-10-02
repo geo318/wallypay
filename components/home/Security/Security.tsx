@@ -15,7 +15,7 @@ export const Security = ({
   return (
     <>
       <div className='flex lg:flex-row flex-col lg:gap-20 gap-10'>
-        <div className='flex flex-col lg:gap-12 gap-5 basis-1/2 lg:py-20 py-10'>
+        <div className='flex flex-col lg:gap-12 gap-5 basis-1/2 lg:py-20 py-6'>
           <Anima>
             <h2 className='lg:text-5xl text-3xl font-bold'>{text.heading}</h2>
           </Anima>
