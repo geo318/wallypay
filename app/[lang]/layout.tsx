@@ -25,7 +25,7 @@ export default async function RootLayout({
 }) {
   const { shared } = await getDictionary(lang)
   return (
-    <html lang='en'>
+    <html lang={lang}>
       <body
         style={font.style}
         className='text-app-black min-h-screen flex flex-col'
