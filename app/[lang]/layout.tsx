@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { Footer, Navbar, ProgressBar } from '/components'
 import { Locale } from '/types'
 import { getDictionary } from '/lib'
+import { locales } from '/config'
 
 export const metadata: Metadata = {
   title: 'WallyPay',
@@ -36,4 +37,8 @@ export default async function RootLayout({
       </body>
     </html>
   )
+}
+
+export function generateStaticParams() {
+  return locales.map((lang) => ({ lang }))
 }
