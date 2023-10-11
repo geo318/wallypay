@@ -25,7 +25,7 @@ export const MasterCard: React.FC<JSX.IntrinsicElements["svg"]> = (props) => (
       width="28.5174"
       height="23.3"
       rx="4.65"
-      stroke="white"
+      stroke="black"
       strokeWidth="0.7"
     />
   </svg>
