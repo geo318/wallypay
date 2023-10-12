@@ -6,6 +6,7 @@ import { SharedText } from '/types'
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
 import { NavItemProps } from './types'
+import { Arrow } from '/components/icons'
 
 export const NavItem: React.FC<NavItemProps> = ({
   name,
@@ -19,19 +20,25 @@ export const NavItem: React.FC<NavItemProps> = ({
   const pathname = usePathname()
   return (
     <li className='list-none font-semibold lg:font-medium text-sm group relative'>
-      <Link
-        href={link ? `/${lang}${link}` : '#'}
-        onClick={toggle}
-        className={twMerge(
-          'hover:opacity-70 py-1 transition-opacity duration-200',
-          menu?.some((e) => pathname.includes(e.link)) ||
-            (link && pathname.includes(link))
-            ? 'border-b border-app-blue'
-            : ''
+      <div className='group flex gap-2 items-center'>
+        <Link
+          href={link ? `/${lang}${link}` : '#'}
+          onClick={toggle}
+          className={twMerge(
+            'group-hover:opacity-70 py-1 transition-opacity duration-200',
+            menu?.some((e) => pathname.includes(e.link)) ||
+              (link && pathname.includes(link))
+              ? 'border-b border-app-blue'
+              : ''
+          )}
+        >
+          {text[name]}
+        </Link>
+        {!!menu.length && (
+          <Arrow className='lg:block hidden w-3 h-3 rotate-90 group-hover:-rotate-90 transition-all' />
         )}
-      >
-        {text[name]}
-      </Link>
+      </div>
+
       {!!menu.length && (
         <div
           className={twMerge(
@@ -39,7 +46,7 @@ export const NavItem: React.FC<NavItemProps> = ({
             className
           )}
         >
-          <ul className='py-2 lg:mt-7 bg-white w-64 rounded-md border-zinc-200 lg:shadow-md text-sm font-medium'>
+          <ul className='py-2 lg:mt-7 bg-white w-64 rounded-md border border-zinc-100 lg:shadow-md text-sm font-medium'>
             {menu.map((item) => (
               <li
                 key={item.name}

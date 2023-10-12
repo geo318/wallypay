@@ -8,7 +8,7 @@ import { twMerge } from 'tailwind-merge'
 export function Switcher() {
   const pathname = usePathname()
   return (
-    <ul className='flex font-medium text-sm'>
+    <ul className='flex font-medium text-sm items-center'>
       {locales?.map((locale) => (
         <li
           key={locale}
