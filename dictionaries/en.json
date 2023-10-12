@@ -4,7 +4,7 @@
       "heading": "Join The Future!",
       "Download": "Download",
       "wallypay": "WallyPay",
-      "description": "unleash the power of convenience with our E-Wallet app and claim your very own exclusive Mastercard Debit Card!"
+      "description": "explore the power of convenience with our E-Wallet app and claim your very own exclusive Mastercard Debit Card!"
     },
     "partners": { "heading": "Our Partners" },
     "card": {
@@ -30,7 +30,7 @@
       "action": "Learn More"
     },
     "loan": {
-      "heading": "We offer loans",
+      "heading": "We offer to add a loan",
       "sub": "Unlock additional loan opportunities online through our extensive partner network.",
       "description": [
         "Secure added funds through our partner loans with a single click",
@@ -41,7 +41,7 @@
       "action": "Learn More"
     },
     "crypto": {
-      "heading": "We`re crypto-friendly",
+      "heading": "Crypto-friendly Wallet",
       "sub": "Unlock crypto potential: Transfer funds instantly to trusted partner platforms.",
       "description": [
         "Transfer funds smoothly from your e-wallet to partner crypto platforms",

@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
+import { twMerge } from 'tailwind-merge'
 
 export const Card: React.FC<{
   heading: string
@@ -7,7 +8,8 @@ export const Card: React.FC<{
   image: StaticImageData
   button: JSX.Element
   alt?: string
-}> = ({ heading, sub, button, description, image, alt = '' }) => {
+  color: string
+}> = ({ heading, sub, button, description, image, color, alt = '' }) => {
   return (
     <article>
       <h3 className='lg:text-5xl text-2xl font-bold'>{heading}</h3>
@@ -17,7 +19,12 @@ export const Card: React.FC<{
           <ul className='flex flex-col gap-5 text-sm font-medium text-zinc-700'>
             {description.map((item) => (
               <li className='flex lg:gap-8 gap-4 items-center' key={item}>
-                <span className='w-[1.125rem] h-[.125rem] rounded-full bg-[#827E7E]' />
+                <span
+                  className={twMerge(
+                    'w-[1.125rem] h-[.125rem] rounded-full',
+                    color ?? 'bg-[#827E7E]'
+                  )}
+                />
                 <span>{item}</span>
               </li>
             ))}

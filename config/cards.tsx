@@ -4,11 +4,12 @@ import { card } from '/public'
 import { routes } from './routes'
 import { locales } from './locales'
 
-export const cards = (lang: typeof locales[number]) =>
+export const cards = (lang: (typeof locales)[number]) =>
   [
     {
       image: card,
       name: 'card',
+      color: 'bg-[#827E7E]',
       button: (text: string) => (
         <Link href={`/${lang}${routes.order}`}>
           <Button variant='primary' className='py-2 mr-auto'>
@@ -21,6 +22,7 @@ export const cards = (lang: typeof locales[number]) =>
     {
       image: card,
       name: 'wallet',
+      color: 'bg-app-blue',
       button: (text: string) => (
         <Link href={`/${lang}${routes.wallet}`}>
           <Button className='py-2 mr-auto bg-app-blue text-white border-transparent hover:bg-[#19B2E6]'>
@@ -32,6 +34,7 @@ export const cards = (lang: typeof locales[number]) =>
     {
       image: card,
       name: 'loan',
+      color: 'bg-[#F395F5]',
       button: (text: string) => (
         <Link href={`/${lang}${routes.loan}`}>
           <Button className='py-2 mr-auto bg-[#F395F5] text-white border-transparent hover:bg-[#f18cf3]'>
@@ -43,6 +46,7 @@ export const cards = (lang: typeof locales[number]) =>
     {
       image: card,
       name: 'crypto',
+      color: 'bg-[#4ECDC4]',
       button: (text: string) => (
         <Link href={`/${lang}${routes.crypto}`}>
           <Button className='py-2 mr-auto bg-[#4ECDC4] text-white border-transparent hover:bg-[#47bbb3]'>

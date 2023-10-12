@@ -33,12 +33,12 @@ export const Security = ({
           </div>
         </div>
         <div className='ml-auto basis-1/2 lg:block hidden'>
-          <figure className='flex p-5 pt-0'>
-            <Anima>
+          <figure className='flex pt-0 w-full'>
+            <Anima className='w-full'>
               <Image
                 src={lock}
                 alt='banner'
-                className='lg:max-w-md xl:w-auto w-[23rem] object-contain lg:ml-auto'
+                className='lg:max-w-[32rem] w-full h-full object-contain lg:ml-auto'
                 priority
               />
             </Anima>

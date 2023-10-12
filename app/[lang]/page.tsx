@@ -17,14 +17,14 @@ import { getDictionary } from '/lib/dictionary'
 import Link from 'next/link'
 import { Suspense } from 'react'
 
-export default async function Admin({ params: { lang } }: PageProps) {
+export default async function Home({ params: { lang } }: PageProps) {
   const { home } = await getDictionary(lang)
 
   return (
     <div className='text-black font-bold md:text-lg text-base fade-in'>
       <section className='lg:mt-20 mt-14 flex lg:flex-row flex-col xl:gap-32 gap-5 xl:px-16 px-5'>
-        <div className='flex flex-col gap-12 basis-1/2 lg:py-20 py-10 pt-0'>
-          <h2 className='xl:text-6xl text-4xl font-bold'>
+        <div className='flex flex-col gap-12 basis-1/2 lg:pb-20 py-10 pt-0'>
+          <h2 className='xl:text-[6rem] xl:leading-tight text-4xl font-bold'>
             {home.main.heading}
           </h2>
           <p className='pr-5 font-normal lg:text-xl text-base leading-8 max-w-2xl lg:tracking-wider'>
@@ -67,7 +67,7 @@ export default async function Admin({ params: { lang } }: PageProps) {
       </section>
       <section className='bg-app-blue-light xl:px-16 px-5 flex flex-col xl:gap-28 gap-16 xl:py-32 py-14'>
         <Suspense fallback={<Spinner />}>
-          {cards(lang).map(({ button, image, name }) => (
+          {cards(lang).map(({ button, image, name, color }) => (
             <Anima key={home[name].heading}>
               <Card
                 button={button(home[name].action)}
@@ -75,6 +75,7 @@ export default async function Admin({ params: { lang } }: PageProps) {
                 sub={home[name].sub}
                 description={home[name].description}
                 image={image}
+                color={color}
               />
             </Anima>
           ))}
