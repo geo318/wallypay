@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { locales, emojis } from '/config'
+import { locales, emojis, localeNames } from '/config'
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
 
@@ -18,7 +18,7 @@ export function Switcher() {
             href={pathname.replace(/^\/(en|ka)/, `/${locale}`)}
             className='hover:opacity-80 transition-opacity duration-200'
           >
-            {`${emojis[locale]} ${locale}`}
+            {`${emojis[locale]} ${localeNames[locale]}`}
           </Link>
         </li>
       ))}
