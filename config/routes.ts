@@ -9,9 +9,9 @@ export const routes = {
   partnership: '/partnership',
   contact: '/contact',
   terms: '/terms',
-  security: '/terms/security',
+  security: '/terms/system_usage',
   rules: '/terms/rules',
-  policy: '/terms/policy',
+  policy: '/terms/usage_policy',
   confidentiality: '/terms/confidentiality',
-  agreement: '/terms/agreement',
+  agreement: '/terms/service_agreement',
 }
