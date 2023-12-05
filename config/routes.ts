@@ -12,6 +12,6 @@ export const routes = {
   security: '/terms/security',
   rules: '/terms/rules',
   policy: '/terms/policy',
-  confidentiality: '/terms/confidentiality',
+  confidentiality: '/terms/privacy-policy',
   agreement: '/terms/agreement',
 }
