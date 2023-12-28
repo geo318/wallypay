@@ -349,7 +349,8 @@
       "security": "WALLYPAY system security rules",
       "rules": "Rules and Conditions of Card Usage",
       "confidentiality": "Privacy Policy",
-      "agreement": "Payment Service Agreement"
+      "agreement": "Payment Service Agreement",
+      "rates": "WallCard rates"
     }
   }
 }
