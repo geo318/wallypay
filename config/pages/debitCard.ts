@@ -68,11 +68,11 @@ export const complaintForm = {
   },
   account_id: {
     required: true,
-    type: 'file',
+    type: 'text',
   },
   transaction_id: {
     required: true,
-    type: 'file',
+    type: 'text',
   },
   message: {
     required: true,

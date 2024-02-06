@@ -37,7 +37,7 @@ export const complaintSchema = z.object({
     .min(8, { message: 'Phone number must be at least 8 characters long' }),
   personal_id: z
     .string()
-    .min(2, { message: 'Personal id must be at least 2 characters long' }),
+    .min(10, { message: 'Personal id must be at least 10 characters long' }),
   address: z
     .string()
     .min(2, { message: 'Address must be at least 2 characters long' }),
@@ -45,5 +45,7 @@ export const complaintSchema = z.object({
     .string()
     .min(40, { message: 'message must be at least 40 characters long' }),
   account_id: z.string(),
-  transaction_id: imgSchema,
+  transaction_id: z
+    .string()
+    .min(4, { message: 'Personal id must be at least 4 characters long' }),
 })

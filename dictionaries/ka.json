@@ -116,7 +116,8 @@
         "card": "WallyPay სადებეტო ბარათი",
         "wallet": "ელექტრონული საფულე",
         "crypto": "კრიპტო-მეგობრული საფულე",
-        "loan": "სესხის ონლაინ დამატება"
+        "loan": "სესხის ონლაინ დამატება",
+        "complaint": "პრეტენზიის მიღების განაცხადის ფორმა"
       },
       "copy": "Copyright © 2023 all rights reserved"
     }
@@ -364,23 +365,37 @@
   },
   "complaint": {
     "form": {
-      "heading": "Complaint",
+      "heading": "საჩივრის ფორმა",
       "inputs": {
-        "name": { "label": "Name", "placeholder": "Your First name" },
-        "last_name": { "label": "Last Name", "placeholder": "Your Last name" },
-        "email": { "label": "Email", "placeholder": "your@email.com" },
-        "phone": { "label": "Phone", "placeholder": "xxxxxxxxx" },
-        "address": { "label": "Address", "placeholder": "Delivery address" },
-        "personal_id": { "label": "Personal Id", "placeholder": "Name" },
-        "message": { "label": "Comment", "placeholder": "Additional comment" },
+        "name": { "label": "სახელი", "placeholder": "შენი სახელი" },
+        "last_name": { "label": "გვარი", "placeholder": "შენი გვარი" },
+        "email": { "label": "ელ.ფოსტა", "placeholder": "your@email.com" },
+        "phone": { "label": "მობილური", "placeholder": "xxxxxxxxx" },
+        "address": { "label": "მისამართი", "placeholder": "მისამარტი" },
+        "personal_id": {
+          "label": "პირადი ნომერი",
+          "placeholder": "პირადი ნომერი"
+        },
+        "message": {
+          "label": "დამატებითი ინფორმაცია",
+          "placeholder": "გთხოვთ, დეტალურად აღწეროთ პრეტენზიის შინაარსი"
+        },
         "account_id": {
-          "label": "Your accout Id",
-          "placeholder": ""
+          "label": "ანგარიშის ნომერი",
+          "placeholder": "ვოლიფეის ანგარიშის ნომერი"
         },
         "transaction_id": {
-          "label": "Your transaction Id",
-          "placeholder": ""
+          "label": "ტრანზაქცია",
+          "placeholder": "ტრანზაქციის ნომერი"
         }
+      },
+      "verify": {
+        "heading": "წინამდებარე საჩივრის წარმოდგენით ვადასტურებ, რომ:",
+        "li": [
+          "საჩივარში მითითებული მონაცემები არის ზუსტი;",
+          "საჩივრის წარმოდგენისათვის გამაჩნია სათანადო უფლებამოსილება;",
+          "სრულად ვარ პასუხისმგებელი საჩივრის წარდგენის შედეგად გამოწვეულ ნებისმიერ სავარაუდო ზიანზე/ზარალზე."
+        ]
       }
     }
   }

@@ -1,5 +1,4 @@
 import { Resend } from 'resend'
-import { emailSchema } from '/schema'
 import { getFormValues } from '/utils'
 import { EmailForm } from '/types'
 import { EmailTemplate } from '/components'

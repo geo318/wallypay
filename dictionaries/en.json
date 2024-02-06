@@ -116,7 +116,8 @@
         "card": "WallyPay Debit Card",
         "wallet": "E-Wallet",
         "crypto": "Crypto-Friendly Wallet",
-        "loan": "Online Loan"
+        "loan": "Online Loan",
+        "complaint": "Claim application form"
       },
       "copy": "Copyright © 2023 all rights reserved"
     }
@@ -362,7 +363,7 @@
         "email": { "label": "Email", "placeholder": "your@email.com" },
         "phone": { "label": "Phone", "placeholder": "xxxxxxxxx" },
         "address": { "label": "Address", "placeholder": "Delivery address" },
-        "personal_id": { "label": "Personal Id", "placeholder": "Name" },
+        "personal_id": { "label": "Personal Id", "placeholder": "personal Id" },
         "message": { "label": "Comment", "placeholder": "Additional comment" },
         "account_id": {
           "label": "Your accout Id",
@@ -372,6 +373,14 @@
           "label": "Your transaction Id",
           "placeholder": ""
         }
+      },
+      "verify": {
+        "heading": "By submitting this complaint, I confirm that:",
+        "li": [
+          "The data specified in the complaint is accurate;",
+          "I have the proper authority to submit a complaint;",
+          "I am fully responsible for any alleged damages caused as a result of filing a complaint."
+        ]
       }
     }
   }

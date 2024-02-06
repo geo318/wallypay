@@ -2,11 +2,7 @@
 import { Input } from '../Input'
 import { useEmailForm } from './useEmailForm'
 import { FormProvider } from 'react-hook-form'
-import {
-  ComplaintFormText,
-  OrderFormText,
-  type ComplaintForm as TComplaintForm,
-} from '/types'
+import { ComplaintFormText, type ComplaintForm as TComplaintForm } from '/types'
 import { complaintForm, complaintFormInitialValues } from '/config'
 import { Fragment } from 'react'
 import { Spinner } from '../shared'
@@ -20,7 +16,7 @@ export const ComplaintForm = ({ texts }: { texts: ComplaintFormText }) => {
 
   return (
     <>
-      <h3 className='py-5 text-3xl font-semibold'>{texts.heading}</h3>
+      <h3 className='py-5 text-3xl font-semibold mt-5'>{texts.heading}</h3>
       {message.error && (
         <p className='text-red-500 border border-red-300 rounded-md p-3'>
           ⚠️ {message.error}
@@ -51,7 +47,7 @@ export const ComplaintForm = ({ texts }: { texts: ComplaintFormText }) => {
             <Fragment key={key}>
               <div
                 className={`flex flex-col gap-2 ${
-                  complaintForm[key].required
+                  complaintForm[key].type !== 'textarea'
                     ? 'lg:col-span-1 col-span-2'
                     : 'col-span-2'
                 }`}
@@ -66,8 +62,15 @@ export const ComplaintForm = ({ texts }: { texts: ComplaintFormText }) => {
             </Fragment>
           ))}
           <label className='flex gap-5 col-span-2 '>
-            <input type='checkbox' required />
-            {/* <span>{texts.verify}</span> */}
+            <input type='checkbox' required className='mt-1 self-start' />
+            <ul>
+              <h4 className='font-medium mb-4'>{texts.verify.heading}</h4>
+              {texts.verify.li.map((li) => (
+                <li key={li} className='text-sm list-disc ml-5 mb-1'>
+                  {li}
+                </li>
+              ))}
+            </ul>
           </label>
 
           <button

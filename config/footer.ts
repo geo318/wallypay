@@ -15,6 +15,7 @@ export const footer = [
       { name: 'about', link: routes.about },
       { name: 'partnership', link: routes.partnership },
       { name: 'terms', link: routes.terms },
+      { name: 'complaint', link: routes.complaint },
     ],
   },
   {

@@ -1,14 +1,5 @@
 import { FooterUl } from './FooterUl'
-import {
-  Android,
-  Apple,
-  Facebook,
-  Instagram,
-  LinkedIn,
-  Logo,
-  Telegram,
-  WhatsApp,
-} from '/components'
+import { Android, Apple, Logo } from '/components'
 import { SharedText } from '/types'
 import { footer, locales } from '/config'
 import Link from 'next/link'
