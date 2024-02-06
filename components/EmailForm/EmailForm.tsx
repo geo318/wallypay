@@ -3,13 +3,16 @@ import { Input } from '../Input'
 import { useEmailForm } from './useEmailForm'
 import { FormProvider } from 'react-hook-form'
 import { OrderFormText, type EmailForm as TEmailForm } from '/types'
-import { orderCardFormInitialValues } from '/config'
+import { orderCardForm, orderCardFormInitialValues } from '/config'
 import { Fragment } from 'react'
 import { Spinner } from '../shared'
+import { emailSchema } from '/schema'
 
 export const EmailForm = ({ texts }: { texts: OrderFormText }) => {
-  const { props, message, isLoading, submitHandler, orderCardForm, form } =
-    useEmailForm()
+  const { props, message, isLoading, submitHandler, form } = useEmailForm(
+    orderCardForm,
+    emailSchema
+  )
 
   return (
     <>

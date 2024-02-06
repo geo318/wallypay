@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { orderCardForm } from '/config'
-import { emailSchema } from '/schema'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldValues, useForm } from 'react-hook-form'
 import { objToFormData } from '/utils'
 
-export const useEmailForm = () => {
+export const useEmailForm = (
+  orderCardForm: Record<string, { type: string; required: boolean }>,
+  emailSchema: Zod.Schema
+) => {
   const [message, setMessage] = useState({ error: '', success: '' })
   const [isLoading, setIsLoading] = useState(false)
 
@@ -39,11 +40,10 @@ export const useEmailForm = () => {
   })
 
   return {
-    orderCardForm,
+    form,
     props,
     message,
     isLoading,
     submitHandler,
-    form,
   }
 }
