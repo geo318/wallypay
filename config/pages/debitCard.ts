@@ -41,9 +41,55 @@ export const orderCardForm = {
   },
 } as const
 
+export const complaintForm = {
+  name: {
+    required: true,
+    type: 'text',
+  },
+  last_name: {
+    required: true,
+    type: 'text',
+  },
+  email: {
+    required: true,
+    type: 'email',
+  },
+  phone: {
+    required: true,
+    type: 'phone',
+  },
+  personal_id: {
+    required: true,
+    type: 'text',
+  },
+  address: {
+    required: true,
+    type: 'text',
+  },
+  account_id: {
+    required: true,
+    type: 'file',
+  },
+  transaction_id: {
+    required: true,
+    type: 'file',
+  },
+  message: {
+    required: true,
+    type: 'textarea',
+  },
+} as const
+
 export const orderCardFormInitialValues = (
   Object.keys(orderCardForm) as (keyof typeof orderCardForm)[]
 ).reduce((acc, key) => {
   acc[key] = ''
   return acc
 }, {} as Record<keyof typeof orderCardForm, string>)
+
+export const complaintFormInitialValues = (
+  Object.keys(complaintForm) as (keyof typeof complaintForm)[]
+).reduce((acc, key) => {
+  acc[key] = ''
+  return acc
+}, {} as Record<keyof typeof complaintForm, string>)

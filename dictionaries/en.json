@@ -352,5 +352,27 @@
       "agreement": "Payment Service Agreement",
       "rates": "WallCard rates"
     }
+  },
+  "complaint": {
+    "form": {
+      "heading": "Complaint",
+      "inputs": {
+        "name": { "label": "Name", "placeholder": "Your First name" },
+        "last_name": { "label": "Last Name", "placeholder": "Your Last name" },
+        "email": { "label": "Email", "placeholder": "your@email.com" },
+        "phone": { "label": "Phone", "placeholder": "xxxxxxxxx" },
+        "address": { "label": "Address", "placeholder": "Delivery address" },
+        "personal_id": { "label": "Personal Id", "placeholder": "Name" },
+        "message": { "label": "Comment", "placeholder": "Additional comment" },
+        "account_id": {
+          "label": "Your accout Id",
+          "placeholder": ""
+        },
+        "transaction_id": {
+          "label": "Your transaction Id",
+          "placeholder": ""
+        }
+      }
+    }
   }
 }

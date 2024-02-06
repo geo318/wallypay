@@ -24,7 +24,7 @@ export const emailSchema = z.object({
   your_selfie_while_holding_id: imgSchema,
 })
 
-export const complaintEmail = z.object({
+export const complaintSchema = z.object({
   name: z
     .string()
     .min(2, { message: 'Name must be at least 2 characters long' }),
