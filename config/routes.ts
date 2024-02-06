@@ -16,4 +16,5 @@ export const routes = {
   agreement: '/terms/agreement',
   rates: '/assets/pdf/rates.pdf',
   complaint: '/complaint',
+  blog: 'https://blog.wallypay.eu',
 }

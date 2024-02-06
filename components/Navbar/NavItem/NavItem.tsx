@@ -22,7 +22,7 @@ export const NavItem: React.FC<NavItemProps> = ({
     <li className='list-none font-semibold lg:font-medium text-sm group relative'>
       <div className='group flex gap-2 items-center'>
         <Link
-          href={link ? `/${lang}${link}` : '#'}
+          href={link && !link.includes('blog') ? `/${lang}${link}` : link}
           onClick={toggle}
           className={twMerge(
             'group-hover:opacity-70 py-1 transition-opacity duration-200',

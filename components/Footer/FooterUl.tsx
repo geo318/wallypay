@@ -29,7 +29,10 @@ export const FooterUl: React.FC<{
                 {text.list[name]}
               </a>
             ) : (
-              <Link href={`/${lang}${link}` || '#'} className='balanced'>
+              <Link
+                href={!link.includes('blog') ? `/${lang}${link}` : link}
+                className='balanced'
+              >
                 {text.list[name]}
               </Link>
             )}

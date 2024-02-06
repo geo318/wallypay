@@ -12,6 +12,7 @@ export const navList = [
     ],
   },
   { name: 'partnership', link: routes.partnership, menu: [] },
+  { name: 'blog', link: routes.blog, menu: [] },
   { name: 'about', link: routes.about, menu: [] },
   { name: 'contact', link: routes.contact, menu: [] },
 ] as const
