@@ -29,7 +29,7 @@ export const POST = async (req: NextRequest) => {
 
     const res: CreateEmailResponse = await resend.emails.send({
       from: 'Wallypay <noreply@wallypay.eu>',
-      to: [mappedEntries.email],
+      to: [mappedEntries.email, 'support@wallypay.eu'],
       subject: emailConfig?.[type]?.subject ?? 'New email',
       react: EmailTemplate({
         ...mappedEntries,
