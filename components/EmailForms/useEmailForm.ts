@@ -2,10 +2,12 @@ import { useState } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldValues, useForm } from 'react-hook-form'
 import { objToFormData } from '/utils'
+import { Email } from '/types'
 
 export const useEmailForm = (
   orderCardForm: Record<string, { type: string; required: boolean }>,
-  emailSchema: Zod.Schema
+  emailSchema: Zod.Schema,
+  type: Email
 ) => {
   const [message, setMessage] = useState({ error: '', success: '' })
   const [isLoading, setIsLoading] = useState(false)
@@ -20,7 +22,7 @@ export const useEmailForm = (
 
     const formData = objToFormData(data)
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_URL}/api/send`, {
+      await fetch(`${process.env.NEXT_PUBLIC_URL}/api/send?type=${type}`, {
         method: 'POST',
         body: formData,
       })

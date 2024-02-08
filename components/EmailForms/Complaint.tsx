@@ -3,15 +3,16 @@ import { Input } from '../Input'
 import { useEmailForm } from './useEmailForm'
 import { FormProvider } from 'react-hook-form'
 import { ComplaintFormText, type ComplaintForm as TComplaintForm } from '/types'
-import { complaintForm, complaintFormInitialValues } from '/config'
+import { complaintFormConfig, complaintFormInitialValues } from '/config'
 import { Fragment } from 'react'
 import { Spinner } from '../shared'
 import { complaintSchema } from '/schema'
 
-export const ComplaintForm = ({ texts }: { texts: ComplaintFormText }) => {
+export function ComplaintForm({ texts }: { texts: ComplaintFormText }) {
   const { props, message, isLoading, submitHandler, form } = useEmailForm(
-    complaintForm,
-    complaintSchema
+    complaintFormConfig,
+    complaintSchema,
+    'complaint'
   )
 
   return (
@@ -47,7 +48,7 @@ export const ComplaintForm = ({ texts }: { texts: ComplaintFormText }) => {
             <Fragment key={key}>
               <div
                 className={`flex flex-col gap-2 ${
-                  complaintForm[key].type !== 'textarea'
+                  complaintFormConfig[key].type !== 'textarea'
                     ? 'lg:col-span-1 col-span-2'
                     : 'col-span-2'
                 }`}

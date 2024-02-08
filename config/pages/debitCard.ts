@@ -1,4 +1,4 @@
-export const orderCardForm = {
+export const orderCardFormConfig = {
   name: {
     required: true,
     type: 'text',
@@ -41,7 +41,7 @@ export const orderCardForm = {
   },
 } as const
 
-export const complaintForm = {
+export const complaintFormConfig = {
   name: {
     required: true,
     type: 'text',
@@ -81,15 +81,15 @@ export const complaintForm = {
 } as const
 
 export const orderCardFormInitialValues = (
-  Object.keys(orderCardForm) as (keyof typeof orderCardForm)[]
+  Object.keys(orderCardFormConfig) as (keyof typeof orderCardFormConfig)[]
 ).reduce((acc, key) => {
   acc[key] = ''
   return acc
-}, {} as Record<keyof typeof orderCardForm, string>)
+}, {} as Record<keyof typeof orderCardFormConfig, string>)
 
 export const complaintFormInitialValues = (
-  Object.keys(complaintForm) as (keyof typeof complaintForm)[]
+  Object.keys(complaintFormConfig) as (keyof typeof complaintFormConfig)[]
 ).reduce((acc, key) => {
   acc[key] = ''
   return acc
-}, {} as Record<keyof typeof complaintForm, string>)
+}, {} as Record<keyof typeof complaintFormConfig, string>)

@@ -17,3 +17,4 @@ export type ComplaintFormText = Translation['complaint']['form']
 export type PageProps = { params: { lang: Locale } }
 export type EmailForm = z.infer<typeof emailSchema>
 export type ComplaintForm = z.infer<typeof complaintSchema>
+export type Email = 'order' | 'complaint'

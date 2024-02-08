@@ -3,15 +3,16 @@ import { Input } from '../Input'
 import { useEmailForm } from './useEmailForm'
 import { FormProvider } from 'react-hook-form'
 import { OrderFormText, type EmailForm as TEmailForm } from '/types'
-import { orderCardForm, orderCardFormInitialValues } from '/config'
+import { orderCardFormConfig, orderCardFormInitialValues } from '/config'
 import { Fragment } from 'react'
 import { Spinner } from '../shared'
 import { emailSchema } from '/schema'
 
-export const EmailForm = ({ texts }: { texts: OrderFormText }) => {
+export function EmailForm({ texts }: { texts: OrderFormText }) {
   const { props, message, isLoading, submitHandler, form } = useEmailForm(
-    orderCardForm,
-    emailSchema
+    orderCardFormConfig,
+    emailSchema,
+    'order'
   )
 
   return (
@@ -52,7 +53,7 @@ export const EmailForm = ({ texts }: { texts: OrderFormText }) => {
               )}
               <div
                 className={`flex flex-col gap-2 ${
-                  orderCardForm[key].required
+                  orderCardFormConfig[key].required
                     ? 'lg:col-span-1 col-span-2'
                     : 'col-span-2'
                 }`}

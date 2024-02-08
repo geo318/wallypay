@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { locales, emojis, localeNames } from '/config'
+import { locales, emojis, localeNames } from '/config/locales'
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
 
