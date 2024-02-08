@@ -6,6 +6,7 @@ import { Locale } from '/types'
 import { getDictionary } from '/lib'
 import { locales } from '/config'
 import { twMerge } from 'tailwind-merge'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   title: 'WallyPay',
@@ -16,6 +17,7 @@ const eng = Poppins({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
 })
+
 const geo = Noto_Sans_Georgian({
   weight: ['400', '500', '600', '700'],
   subsets: ['georgian', 'latin'],
@@ -37,7 +39,10 @@ export default async function RootLayout({
           lang === 'en' ? eng.className : geo.className
         )}
       >
-        <ProgressBar color='#1CC5FF' options={{ showSpinner: false }} />
+        <Suspense>
+          <ProgressBar color='#1CC5FF' options={{ showSpinner: false }} />
+        </Suspense>
+
         <Navbar text={shared.header} lang={lang} />
         <main className='mx-auto max-w-[100rem] w-full'>{children}</main>
         <Footer text={shared.footer} lang={lang} />

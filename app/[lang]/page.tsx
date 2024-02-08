@@ -14,8 +14,8 @@ import { banner } from '/public'
 import { cards } from '/config'
 import { PageProps } from '/types'
 import { getDictionary } from '/lib/dictionary'
-import Link from 'next/link'
 import { Suspense } from 'react'
+import Link from 'next/link'
 
 export default async function Home({ params: { lang } }: PageProps) {
   const { home } = await getDictionary(lang)
