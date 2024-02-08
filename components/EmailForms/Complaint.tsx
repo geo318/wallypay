@@ -8,7 +8,7 @@ import { Fragment } from 'react'
 import { Spinner } from '../shared'
 import { complaintSchema } from '/schema'
 
-export function ComplaintForm({ texts }: { texts: ComplaintFormText }) {
+export function ComplaintEmailForm({ texts }: { texts: ComplaintFormText }) {
   const { props, message, isLoading, submitHandler, form } = useEmailForm(
     complaintFormConfig,
     complaintSchema,
@@ -86,5 +86,3 @@ export function ComplaintForm({ texts }: { texts: ComplaintFormText }) {
     </>
   )
 }
-
-export default ComplaintForm

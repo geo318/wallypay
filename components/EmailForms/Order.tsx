@@ -1,4 +1,5 @@
 'use client'
+
 import { Input } from '../Input'
 import { useEmailForm } from './useEmailForm'
 import { FormProvider } from 'react-hook-form'
@@ -8,7 +9,7 @@ import { Fragment } from 'react'
 import { Spinner } from '../shared'
 import { emailSchema } from '/schema'
 
-export function EmailForm({ texts }: { texts: OrderFormText }) {
+export function OrderEmailForm({ texts }: { texts: OrderFormText }) {
   const { props, message, isLoading, submitHandler, form } = useEmailForm(
     orderCardFormConfig,
     emailSchema,
@@ -89,5 +90,3 @@ export function EmailForm({ texts }: { texts: OrderFormText }) {
     </>
   )
 }
-
-export default EmailForm
