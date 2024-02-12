@@ -1,7 +1,7 @@
 {
   "home": {
     "main": {
-      "heading": "Join The Future!",
+      "heading": "Welcome to WallyPay: Gateway to Innovative Fintech Solutions",
       "Download": "Download",
       "wallypay": "WallyPay",
       "description": "explore the power of convenience with our E-Wallet app and claim your very own exclusive Mastercard Debit Card!"
@@ -123,7 +123,7 @@
     }
   },
   "debit_card": {
-    "h1": "WallyPay Debit Card",
+    "h1": "WallyPay Debit Card: Flexibility & Security",
     "sections": [
       {
         "h2": null,
@@ -154,7 +154,7 @@
     ]
   },
   "order_card": {
-    "h1": "Order Card",
+    "h1": "Order Your WallyPay Debit Card Today",
     "sections": [
       {
         "h2": "Still not having a WallyCard?",
@@ -206,7 +206,7 @@
     }
   },
   "wallet": {
-    "h1": "Electronic Wallet",
+    "h1": "WallyPay E-Wallet: Secure Financial Management",
     "sections": [
       {
         "h2": null,
@@ -230,7 +230,7 @@
     "footer": "Download the WallyPay`s mobile app and use the electronic wallet daily."
   },
   "crypto": {
-    "h1": "Crypto-Friendly Wallet",
+    "h1": "WallyPay Crypto Wallet: Embrace Digital Currency",
     "sections": [
       {
         "h2": null,
@@ -243,7 +243,7 @@
     ]
   },
   "loan": {
-    "h1": "Online Loan",
+    "h1": "WallyPay Online Loans: Quick & Accessible Finance",
     "sections": [
       {
         "h2": "WallyPay is a mobile app created to make your life easier",
@@ -258,7 +258,7 @@
     "footer": "WallyApp - 24 hours, 7 days a week at your disposal!"
   },
   "partner": {
-    "h1": "Partnership",
+    "h1": "Growing Together with Our Partners",
     "sections": [
       {
         "h2": "Want to be part of the innovation oriented team?",
@@ -282,7 +282,7 @@
     }
   },
   "about": {
-    "h1": "What is WallyPay?",
+    "h1": "The Story of WallyPay",
     "sections": [
       {
         "h2": null,
@@ -296,7 +296,7 @@
     ]
   },
   "contact": {
-    "h1": "contact",
+    "h1": "Contact WallyPay",
     "phone": "+995 032 256 05 55",
     "2nd_phone": "+995 595 60 80 20",
     "email": "support@wallypay.eu",

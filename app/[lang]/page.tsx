@@ -31,9 +31,9 @@ export default async function Home({ params: { lang } }: PageProps) {
     <div className='text-black font-bold md:text-lg text-base fade-in'>
       <section className='lg:mt-20 mt-14 flex lg:flex-row flex-col xl:gap-32 gap-5 xl:px-16 px-5'>
         <div className='flex flex-col gap-12 basis-1/2 lg:pb-20 py-10 pt-0'>
-          <h2 className='xl:text-[6rem] xl:leading-tight text-4xl font-bold'>
+          <h1 className='xl:text-[3rem] xl:leading-tight text-4xl font-bold'>
             {home.main.heading}
-          </h2>
+          </h1>
           <p className='pr-5 font-normal lg:text-xl text-base leading-8 max-w-2xl lg:tracking-wider'>
             {home.main.Download}&nbsp;
             <span className='text-app-blue font-bold'>
