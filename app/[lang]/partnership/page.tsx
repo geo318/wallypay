@@ -3,6 +3,13 @@ import { getDictionary } from '/lib'
 import { PageProps } from '/types'
 import { partnerImg } from '/public'
 import { DownloadApp, Page } from '/components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'WallyPay Partnerships',
+  description:
+    'Discover how partnering with WallyPay can enhance your fintech solutions. Learn more about our collaboration opportunities.',
+}
 
 export default async function DebitCard({ params: { lang } }: PageProps) {
   const { partner } = await getDictionary(lang)

@@ -1,6 +1,13 @@
 import { getDictionary } from '/lib'
 import { PageProps } from '/types'
 import { DownloadApp, Location, Email, Phone } from '/components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact WallyPay',
+  description:
+    'Need assistance or have questions? Contact WallyPay today for support and inquiries.',
+}
 
 export default async function DebitCard({ params: { lang } }: PageProps) {
   const { contact } = await getDictionary(lang)

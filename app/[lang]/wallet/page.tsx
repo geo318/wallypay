@@ -3,6 +3,13 @@ import { getDictionary } from '/lib'
 import { PageProps } from '/types'
 import { walletImg } from '/public'
 import { DownloadApp, Page } from '/components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Secure &amp; Efficient Electronic Wallet by WallyPay',
+  description:
+    'Securely manage your finances with WallyPay&#39;s electronic wallet, offering instant access to your funds anytime, anywhere.',
+}
 
 export default async function DebitCard({ params: { lang } }: PageProps) {
   const { wallet } = await getDictionary(lang)

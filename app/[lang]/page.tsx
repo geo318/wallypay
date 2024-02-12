@@ -15,7 +15,14 @@ import { cards } from '/config'
 import { PageProps } from '/types'
 import { getDictionary } from '/lib/dictionary'
 import { Suspense } from 'react'
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'WallyPay: Your Gateway to Innovative Finance',
+  description:
+    'Explore WallyPay`s innovative fintech solutions for seamless financial management and digital currency transactions.',
+}
 
 export default async function Home({ params: { lang } }: PageProps) {
   const { home } = await getDictionary(lang)

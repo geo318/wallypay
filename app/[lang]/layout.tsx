@@ -8,11 +8,6 @@ import { locales } from '/config'
 import { twMerge } from 'tailwind-merge'
 import { Suspense } from 'react'
 
-export const metadata: Metadata = {
-  title: 'WallyPay',
-  description: 'Your wallet',
-}
-
 const eng = Poppins({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
