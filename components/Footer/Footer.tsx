@@ -16,7 +16,7 @@ export const Footer = ({
     <footer className='bg-app-blue-dark text-white relative mt-auto'>
       <div className='max-w-[100rem] mx-auto grid xl:grid-cols-10 lg:grid-cols-4 grid-cols-3 py-14 px-10 xl:px-0'>
         <section className='col-span-2 text-center hidden xl:flex flex-col gap-11 items-center'>
-          <Logo className='ml-10' />
+          <Logo className='max-w-[10rem]' />
           <Social />
         </section>
         <section className='grid gap-10 md:grid-cols-3 col-span-3 xl:col-span-6'>
@@ -49,7 +49,7 @@ export const Footer = ({
         </section>
       </div>
       <section className='col-span-2 text-center xl:hidden my-10 flex flex-col gap-5'>
-        <Logo className='mx-auto pl-8' />
+        <Logo className='mx-auto pl-8 max-w-[12rem]' />
         <Social />
       </section>
       <p className='mx-auto text-center pb-6 text-[#71737A] text-sm'>

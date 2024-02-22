@@ -1,5 +1,4 @@
 import { ImageResponse } from 'next/server'
-import { Logo } from '/components'
 
 export const runtime = 'edge'
 

@@ -10,8 +10,8 @@ export const Navbar: React.FC<NavbarProps> = ({ text, lang }) => {
     <header className='text-app-black font-bold text-lg py-7 xl:px-16 px-5 border-b border-[#EDEDED]'>
       <div className='flex items-center'>
         <Link href={`/${lang}${routes.home}`}>
-          <Logo className='w-[12.5rem] block md:hidden xl:block' />
-          <Logo className='xl:hidden md:block hidden' w />
+          <Logo className='w-[11rem] hidden xl:block' />
+          <Logo className='xl:hidden block w-[4rem]' w />
         </Link>
         <Nav text={text} lang={lang} className='lg:flex hidden' />
         <div className='flex gap-6 ml-auto'>

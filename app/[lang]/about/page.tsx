@@ -1,6 +1,6 @@
 import { getDictionary } from '/lib'
 import { PageProps } from '/types'
-import { DownloadApp, Logo, Page } from '/components'
+import { DownloadApp, Page } from '/components'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
