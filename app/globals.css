@@ -63,3 +63,26 @@ header img {
   -o-user-drag: none;
   user-drag: none;
 }
+
+.ncls-1 {
+  fill: #f7aef8;
+}
+.ncls-1,
+.ncls-2,
+.ncls-3,
+.ncls-4,
+.ncls-5 {
+  stroke-width: 0px;
+}
+.ncls-2 {
+  fill: #4ecdc4;
+}
+.ncls-3 {
+  fill: #7239f4;
+}
+.ncls-4 {
+  fill: #1cc5ff;
+}
+.ncls-5 {
+  fill: #97f9f9;
+}
