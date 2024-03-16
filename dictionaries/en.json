@@ -41,11 +41,11 @@
       "action": "Learn More"
     },
     "crypto": {
-      "heading": "Crypto-friendly Wallet",
-      "sub": "Unlock crypto potential: Transfer funds instantly to trusted partner platforms.",
+      "heading": "User-friendly Wallet",
+      "sub": "Unlock potential: Transfer funds instantly to trusted partner platforms.",
       "description": [
-        "Transfer funds smoothly from your e-wallet to partner crypto platforms",
-        "Your funds reach reputable crypto platforms securely",
+        "Transfer funds smoothly from your e-wallet to partner platforms",
+        "Your funds reach reputable platforms securely",
         "Move funds seamlessly for diversified investments",
         "Monitor transfer history, maintaining transparent records"
       ],
@@ -58,7 +58,7 @@
       "topUp": "Top up e-wallet balance",
       "utilities": "Paying utility bills online",
       "wallet": "E-wallet capabilities",
-      "crypto": "Crypto-Friendly e-wallet",
+      "crypto": "User-Friendly e-wallet",
       "offer": "Additional online loan",
       "unistream": "Individual exclusive offers"
     },
@@ -95,7 +95,7 @@
       "nav": {
         "card": "WallyPay Debit Card",
         "wallet": "E Wallet",
-        "crypto": "Crypto-Friendly Wallet",
+        "crypto": "User-Friendly Wallet",
         "loan": "Online Loan"
       }
     },
@@ -115,7 +115,7 @@
         "blog": "Blog",
         "card": "WallyPay Debit Card",
         "wallet": "E-Wallet",
-        "crypto": "Crypto-Friendly Wallet",
+        "crypto": "User-friendly Wallet",
         "loan": "Online Loan",
         "complaint": "Claim application form"
       },
@@ -230,14 +230,14 @@
     "footer": "Download the WallyPay`s mobile app and use the electronic wallet daily."
   },
   "crypto": {
-    "h1": "WallyPay Crypto Wallet: Embrace Digital Currency",
+    "h1": "WallyPay Wallet: Embrace Digital transactions",
     "sections": [
       {
         "h2": null,
         "p": [
-          "WallyPay`s mobile app is open for cooperation with crypto exchanges. Direct transfer of money from our e-wallet to the Cryptal platform under the best conditions is now easily possible.",
+          "WallyPay`s mobile app is open for cooperation with money exchanges. Direct transfer of money from our e-wallet to the Cryptal platform under the best conditions is now easily possible.",
           "We allow people to transfer and withdraw funds from the Cryptal trading exchange to the WallyPay`s Mastercard.",
-          "In the future, WallyPay also plans to partner with other crypto exchanges and we believe that our crypto-friendly e-wallet will make it easier for many people to interact with crypto exchanges."
+          "In the future, WallyPay also plans to partner with other money exchanges and we believe that our user-friendly e-wallet will make it easier for many people to interact with money exchanges."
         ]
       }
     ]
@@ -272,7 +272,7 @@
           "Microfinance Organization - to move the customer relationship to a new, technological stage",
           "Merchant - to join the card cashback system",
           "Online service provider - those who need a solution to card transactions",
-          "Crypto Exchanges"
+          "Money Exchanges"
         ]
       }
     ],
